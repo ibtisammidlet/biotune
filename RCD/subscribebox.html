@@ -1,0 +1,189 @@
+    <div id="subscribebox" style="text-align: center;"><b>v1.9.2022.8.17</b></div><div id="subscribebox" style="text-align: center;">change log:</div><div id="subscribebox" style="text-align: center;">-all receptors added glutamate</div><div id="subscribebox" style="text-align: center;">-added 4 new neurotransmitter</div><div id="subscribebox" style="text-align: center;">-better description in multiple receptors</div>
+    <br>
+    <!--email-->
+    <div id="mailchimp-subscribe-widget">
+    <div style="text-align: center;">
+    
+    <style>@import url(//fonts.googleapis.com/earlyaccess/notosanskufiarabic.css);
+    #subscribebox {
+     background: #576269;
+     padding: 20px;
+     font-family: &#39;
+     PT Sans&#39;
+     ,
+     sans-serif;
+    }
+    
+    .widget_follow_subscribe .widget-detail {
+     padding: 36px 30px 40px
+    }
+    
+    #mailchimp-subscribe-widget {
+    
+        margin: 0px 30%;
+    
+    }
+    #subscribebox {
+     color: #fff;
+     font-size: 15px;
+     text-align: center;
+     font-weight: 700;
+     font-family: 'Noto Sans Kufi Arabic', sans-serif!important;
+     line-height: 3em;
+     margin: 0;
+     
+    }
+    #subscribebox > p:nth-child(2) {
+    font-size: 30px;
+    line-height: 1em;
+    margin: 0px 0px 15px;
+    }
+    
+    .follow-subscribe-social {
+     padding: 0 0 14px;
+     border-bottom: #858585 solid 1px
+    }
+    
+    .follow-subscribe-social ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     text-align: center
+    }
+    
+    .follow-subscribe-social ul li {
+     display: inline;
+     margin-left: 20px;
+     border-bottom: none
+    }
+    
+    .follow-subscribe-social ul li:last-child {
+     margin: 0
+    }
+    
+    .follow-subscribe-social ul li a {
+     font-size: 17px;
+     color: #cacaca;
+     -webkit-transition: color .2s ease-in-out;
+     -moz-transition: color .2s ease-in-out;
+     -ms-transition: color .2s ease-in-out;
+     -o-transition: color .2s ease-in-out;
+     transition: color .2s ease-in-out
+    }
+    
+    .follow-subscribe-social ul li a:hover {
+     color: #fff
+    }
+    
+    form.subscribe {
+     margin-top: -7px
+    }
+    
+    form.subscribe input {
+     display: block;
+     width: 100%
+    }
+    
+    .subscribe-email {
+     height: 45px;
+     border: none;
+     margin: 0 0 10px;
+     font-size: .928571em;
+     background-color: rgba(255, 255, 255, 0.2);
+     text-align: center;
+     color: #fff
+    }
+    
+    .subscribe-email:focus {
+     outline: 0
+    }
+    
+    form.subscribe .placeholder {
+     color: #cacaca
+    }
+    
+    form.subscribe input:-ms-input-placeholder {
+     color: #cacaca
+    }
+    
+    form.subscribe input::-webkit-input-placeholder {
+     color: #cacaca
+    }
+    
+    form.subscribe input:-moz-placeholder {
+     color: #fafafa
+    }
+    
+    form.subscribe input::-moz-placeholder {
+     color: #fafafa
+    }
+    
+    .subscribe-button {
+     height: 45px;
+     font-weight: 700;
+     font-size: 16px;
+     color: #fff;
+     text-transform: uppercase;
+     border: none;
+     background-color: #4FC4F6;
+     transition: background-color .2s ease-in-out;
+     font-family: 'Droid Arabic Naskh', serif;
+    }
+    
+    .subscribe-button:hover {
+     background-color: #00A3CE
+    }
+    
+    .subscribe-button:focus {
+     outline: 0
+    }
+    #subscribebox {
+        border-radius: 4px;
+    }
+    </style>
+    
+    </div>
+    <!--notice this need server side for orderby(); ---->
+    <div id="subscribebox" style="text-align: center;">
+    like this info:)? subscribe to get notified for new improved versions<br>
+    <form class="subscribe" method="post" name="searchform" onsubmit="submiteemail()" target="popupwindow">
+    <input name="uri" type="hidden" value="username">
+    <input name="loc" type="hidden" value="en_US">
+    <input class="subscribe-email" id="subscribe-email" name="subscribeemail" type="email">
+    <input class="subscribe-button" type="submit" value="subscribe now!">
+    </form>
+    </div>
+    <script>
+    function submiteemail(){
+    event.preventDefault() 
+    var sf               = document.searchform;
+    var subscribeemail               = document.subscribeemail;
+    var emailchosen = sf.subscribeemail.value
+    
+    
+    if (emailchosen.indexOf('@')) {
+    
+       var param = {[btoa(emailchosen)]:{"date": new Date()}};
+    
+    $.ajax({
+         url: 'https://biotune-a233b-default-rtdb.firebaseio.com/RFD/emails.json',
+         type: "PATCH",
+         data: JSON.stringify(param),
+         success: function () {
+           alert('thanks for subscriping ^_^');
+         },
+         error: function(error) {
+           alert('there was a problem, check connection and retry if still not work make a commnet in the page');         
+    
+         }
+       });
+    
+    } else (
+    alert('please type your email adress first')
+    );
+      
+    };
+    </script>
+    
+    </div>
+    <br>

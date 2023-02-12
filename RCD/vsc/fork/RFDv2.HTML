@@ -1,0 +1,45 @@
+<script src="./jquery.js"></script>
+<script>
+function flushdb() {
+
+var json = (function() {
+  var json = null;
+  $.ajax({
+    'async': false,
+    'global': false,
+    'url': "./content.json",
+    'dataType': "json",
+    'success': function(data) {
+	  
+$.ajax({
+     url: 'https://biotune-a233b-default-rtdb.firebaseio.com/RFD.json',
+     type: "PATCH",
+     data: '{"data":{}}',
+     success: function () {
+       alert('done');
+     },
+     error: function(error) {
+       alert('not');         
+
+     }
+});
+	  
+    }
+  });
+  return json;
+})();
+
+
+
+
+   
+}
+</script>
+
+<body>
+<form method="post">
+<input type="button" value="flushdb" onclick="flushdb()">
+</form>
+<div id="table"/>
+
+</body>

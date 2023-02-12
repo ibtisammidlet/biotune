@@ -1,0 +1,75 @@
+<style>
+#SearchSubmit, #searchterms, #select1 {
+    text-align: left;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    background: white;
+}
+
+
+
+#search_form {
+margin: 0 auto;
+width: -moz-fit-content;
+width: fit-content;
+}
+
+
+
+</style>
+<div id='searchboxer'>
+<form class="is-flex" id="search_form" name="searchform" onsubmit="return dosearch();">
+<div class="control has-icons-left">
+  <div class="select is-small">
+    <select id="select1" class="duration" name="duration">
+            <option name="0" value="">Neurotransmitter</option>
+            <option name="0" value="all">all</option>
+            <option name="2" value="serotonin">serotonin</option>
+            <option name="3" value="dopamine">dopamine</option>
+    </select>
+  </div>
+  <span class="icon is-small is-left">
+    <i class="fas fa-globe"></i>
+  </span>
+</div>
+<input class="fas fa-italic" class="button is-small is-light" id="SearchSubmit" name="SearchSubmit" type="submit"  value="Search" />
+
+</form>
+
+
+
+
+
+
+
+<script>
+function dosearch() {
+//** to stop auto reload when search btn clicked
+event.preventDefault();
+
+/** define vars firstly **/
+var lable    = $("#search_form .duration option:selected").val()
+
+/** finally define search url **/
+location.href = "?neurotransmitter="+lable;
+return false;
+}
+
+
+$("#select1 option").each(function()
+{
+    console.log($(this).val());
+});
+
+/*
+.serotonin , .dopamine , .noradrenalin{
+    display: none;
+}
+*/
+</script>
+</div>
+
+
+
+

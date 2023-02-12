@@ -1,0 +1,28 @@
+    comment {
+        max-width: 30%;
+    }
+    a.comment-indicator {
+        background: #fff !important;
+        border-radius: 3px;
+    }
+    .item .post-body, .static_page .post-body {
+        line-height: unset !important;
+    }
+    #RFD {
+        overflow-x: scroll;
+    }
+    table {
+        width: 1315px;
+        border-right: 1px black solid;
+    
+    }
+    #PostBody #subscribebox {
+        padding: 0px !important;
+          line-height: 25px;
+    
+    }
+      #mailchimp-subscribe-widget #subscribebox {
+        padding: 20px !important;
+            line-height: 3em;
+    
+    }
