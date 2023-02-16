@@ -21,6 +21,7 @@
     table * {    font-size: 22px !important;}
     #RFD table {width: 2000px !important;}
     #color-meaning table {width: 95% !important;}
+    #menu ul li a {font-size: 11px !important;}
     </style>`); 
     } else { //** in desktop
     $( "head" ).append(`<style>
