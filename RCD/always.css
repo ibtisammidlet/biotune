@@ -26,3 +26,8 @@
             line-height: 3em;
     
     }
+
+<!-- always to be added end -->
+.section {
+    padding: unset !important;
+}
