@@ -295,6 +295,14 @@ https://www.google.com/search?q=salicin+%22IC50%22+OR+%22EC50%22+OR+%22ki%22
 source:https://boards.4channel.org/fit/thread/69921476/nsg-nootssupplements-general
 https://www.buy-pharma.md/
 https://biolabshop.co.uk/
+need trustability check
+https://www.trc-canada.com/
+simsonpharma.com
+pharmasstore.com
+>>https://you.com/search?q=site+to+buy+Metadoxine&fromSearchBar=true&tbm=youchat
+https://purelifedz.com/products/search/care
+https://haylla.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&cid=815&q=care&dispatch=products.search
+https://dz.iherb.com/search?kw=care
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
