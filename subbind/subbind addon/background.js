@@ -303,6 +303,11 @@ pharmasstore.com
 https://purelifedz.com/products/search/care
 https://haylla.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&cid=815&q=care&dispatch=products.search
 https://dz.iherb.com/search?kw=care
+https://namu.wiki/Search?q=care
+https://novelai.net/stories start from scratch
+https://www.magpharm.com/index.php?page=products&pages=0&keyword=care
+https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22care%22&fromSearchBar=true&tbm=youchat
+https://www.alldaychemist.com/
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
