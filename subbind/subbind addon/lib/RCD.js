@@ -1,3 +1,4 @@
+// find in page
 $(document).ready(function(){
 
          page = $('#RFD').text();

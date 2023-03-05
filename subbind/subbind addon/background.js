@@ -1,8 +1,3 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-
 chrome.action.onClicked.addListener(function(tab) {
       chrome.tabs.create({url: 'https://www.biotune.org/p/subbind.html'});
     // Tab opened.
@@ -222,7 +217,7 @@ chrome.contextMenus.create({
 });
 
 
-
+/*
 chrome.contextMenus.create({
   "id":"dezgo_anime",
   "title" : "ganerate img for %s [AI]",
@@ -237,6 +232,7 @@ chrome.contextMenus.create({
   "contexts" : ["all"],
   "parentId": "v1.9.7+",
 });
+*/
 chrome.contextMenus.create({
   "id":"google_bind",
   "title" : "globle binding search for %s [dork]",
@@ -244,7 +240,107 @@ chrome.contextMenus.create({
   "contexts" : ["selection"],
   "parentId": "v1.9.7+",
 });
+chrome.contextMenus.create({
+  "id":"buy-pharma",
+  "title" : "search in buy-pharma for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+});
+chrome.contextMenus.create({
+  "id":"biolabshop",
+  "title" : "search in biolabshop for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+});
+chrome.contextMenus.create({
+  "id":"trc-canada",
+  "title" : "search in trc-canada for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+});
+chrome.contextMenus.create({
+  "id":"purelifedz",
+  "title" : "search in purelifedz for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+});
+chrome.contextMenus.create({
+  "id":"haylla",
+  "title" : "search in haylla for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+});
+chrome.contextMenus.create({
+  "id":"iherb",
+  "title" : "search in iherb for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.7+",
+}); 
+chrome.contextMenus.create({
+  "id":"v1.9.8+",
+  "title" : "v1.9.8+",
+  "contexts" : ["all"],
+  "parentId": "v1.9.7+",
+});
 
+
+
+
+
+
+
+
+
+
+
+chrome.contextMenus.create({
+  "id":"namu.wiki",
+  "title" : "search in namu.wiki for %s",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"magpharm",
+  "title" : "search in magpharm for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"alldaychemist",
+  "title" : "search in alldaychemist for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"you.random.hashtag",
+  "title" : "ganerate hashtag for %s [AI]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"jsdelivr",
+  "title" : "go to jsdelivr [coding]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"jsdelivr-purge",
+  "title" : "go to jsdelivr purge [coding]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.8+",
+});
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -288,52 +384,40 @@ https://everychem.com/?s=Bromantane
 https://www.alphagresearch.com/search-results?q=Tesemorelin
 
 v1.9.7+
-?utm_medium=cpc&utm_source=subbind
 https://dezgo.com/ anything 3.0 (anime)
 https://dezgo.com/upscale
 https://www.google.com/search?q=salicin+%22IC50%22+OR+%22EC50%22+OR+%22ki%22
+
+v1.9.8+
 source:https://boards.4channel.org/fit/thread/69921476/nsg-nootssupplements-general
-https://www.buy-pharma.md/
-https://biolabshop.co.uk/
+https://www.buy-pharma.md/Products/search?keyword=care
+https://biolabshop.pl/module/ambjolisearch/jolisearch?s=care
 need trustability check
-https://www.trc-canada.com/
-simsonpharma.com
-pharmasstore.com
+https://www.trc-canada.com/products-listing/?searchBox=moda&type=searchResult
+simsonpharma.com (need navigation)
+pharmasstore.com (from ukrain)
 >>https://you.com/search?q=site+to+buy+Metadoxine&fromSearchBar=true&tbm=youchat
 https://purelifedz.com/products/search/care
 https://haylla.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&cid=815&q=care&dispatch=products.search
 https://dz.iherb.com/search?kw=care
-https://namu.wiki/Search?q=care
 https://novelai.net/stories start from scratch
+
+v1.9.9+
+https://namu.wiki/Search?q=care
 https://www.magpharm.com/index.php?page=products&pages=0&keyword=care
+https://www.alldaychemist.com/catalogsearch/result/?q=care
 https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22care%22&fromSearchBar=true&tbm=youchat
-https://www.alldaychemist.com/
+https://www.jsdelivr.com/github
+https://www.jsdelivr.com/tools/purge
+https://www.stemcell.com/products/popular-product-types/small-molecules.html
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
       chrome.tabs.create({url: 'https://www.bindingdb.org/rwd/bind/AdvancedSearch.jsp'+'?sources=0&sources=1&sources=2&sources=3&sources=4&sources=5&sources=6&criteria=&choices=compound_name:0:0:0&cn_name:0=exact&cn_text:0='+info.selectionText});
         }
         if (info.menuItemId === "RCD"){
-      chrome.tabs.create({url: 'https://www.biotune.org/2019/07/what-receptors-do-antidepressants-and.html?query='+info.selectionText}, function(tab){
-
-/* 
-console.log(tab.id+" "+info.selectionText)
-var info_selection_Text = info.selectionText;
-//** => works
-
-chrome.search.query({
-text: info_selection_Text,
-tabId: tab.id
-})
-//** => Error handling response: TypeError: Cannot read properties of undefined (reading 'query')
-//** consolation => don't support search, use paralel script
-*/
-
-})
-
-
-
-      }
+      chrome.tabs.create({url: 'https://www.biotune.org/2019/07/what-receptors-do-antidepressants-and.html?query='+info.selectionText});
+        }
         if (info.menuItemId === "GTP"){
       chrome.tabs.create({url: 'https://www.guidetopharmacology.org/GRAC/DatabaseSearchForward?searchString='+info.selectionText+'&searchCategories=all&species=none&type=all&comments=includeComments&order=rank'});
         }
@@ -418,9 +502,15 @@ tabId: tab.id
         }
 
 
-
         if (info.menuItemId === "dezgo_anime"){
-      chrome.tabs.create({url: 'https://dezgo.com/?query='+info.selectionText+''});
+            chrome.tabs.create({url: 'https://dezgo.com/?query='+info.selectionText+''}, 
+                function(tab) {
+                    chrome.tabs.onCreated.addListener(function(tab) {
+                    // do something
+                    console.log("tab created")
+                    });
+                }
+            );
         }
         if (info.menuItemId === "dezgo_upscale"){
       chrome.tabs.create({url: 'https://dezgo.com/upscale'});
@@ -428,10 +518,49 @@ tabId: tab.id
         if (info.menuItemId === "google_bind"){
       chrome.tabs.create({url: 'https://www.google.com/search?q='+info.selectionText+'+%22IC50%22+OR+%22EC50%22+OR+%22ki%22'});
         }
+        if (info.menuItemId === "buy-pharma"){
+      chrome.tabs.create({url: 'https://www.buy-pharma.md/Products/search?keyword='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "biolabshop"){
+      chrome.tabs.create({url: 'https://biolabshop.pl/module/ambjolisearch/jolisearch?s='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "trc-canada"){
+      chrome.tabs.create({url: 'https://www.trc-canada.com/products-listing/?searchBox='+info.selectionText+'&type=searchResult'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "purelifedz"){
+      chrome.tabs.create({url: 'https://purelifedz.com/products/search/'+info.selectionText});
+        }
+        if (info.menuItemId === "haylla"){
+      chrome.tabs.create({url: 'https://haylla.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&cid=815&q='+info.selectionText+'&dispatch=products.search'});
+        }
+        if (info.menuItemId === "iherb"){
+      chrome.tabs.create({url: 'https://dz.iherb.com/search?kw='+info.selectionText});
+        }
+
+
+        if (info.menuItemId === "namu.wiki"){
+      chrome.tabs.create({url: 'https://namu.wiki/Search?q='+info.selectionText});
+        }
+        if (info.menuItemId === "magpharm"){
+      chrome.tabs.create({url: 'https://www.magpharm.com/index.php?page=products&pages=0&keyword='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "alldaychemist"){
+      chrome.tabs.create({url: 'https://www.alldaychemist.com/catalogsearch/result/?q='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "you.random.hashtag"){
+      chrome.tabs.create({url: 'https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22'+info.selectionText+'%22&fromSearchBar=true&tbm=youchat'});
+        }
+        if (info.menuItemId === "jsdelivr"){
+      chrome.tabs.create({url: 'https://www.jsdelivr.com/github'});
+        }
+        if (info.menuItemId === "jsdelivr-purge"){
+      chrome.tabs.create({url: 'https://www.jsdelivr.com/tools/purge'});
+        }
 
     }
 
 });
+
 
 
 
