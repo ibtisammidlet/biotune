@@ -410,6 +410,7 @@ https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22care%2
 https://www.jsdelivr.com/github
 https://www.jsdelivr.com/tools/purge
 https://www.stemcell.com/products/popular-product-types/small-molecules.html
+https://arxiv.org/search/q-bio
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
