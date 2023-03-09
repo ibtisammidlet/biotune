@@ -411,6 +411,7 @@ https://www.jsdelivr.com/github
 https://www.jsdelivr.com/tools/purge
 https://www.stemcell.com/products/popular-product-types/small-molecules.html
 https://arxiv.org/search/q-bio
+https://www.importyeti.com/
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
