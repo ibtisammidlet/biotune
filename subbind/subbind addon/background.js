@@ -412,6 +412,13 @@ https://www.jsdelivr.com/tools/purge
 https://www.stemcell.com/products/popular-product-types/small-molecules.html
 https://arxiv.org/search/q-bio
 https://www.importyeti.com/
+
+######################
+## AI dork research ##
+######################
+"pseudoephedrine" "IC50" OR "EC50" OR "ki" binding list sorted
+
+
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
