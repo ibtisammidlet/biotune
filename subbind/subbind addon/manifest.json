@@ -6,8 +6,8 @@
     "service_worker": "background.js"
    },
    "content_scripts": [ {
-      "js": ["jquery.js", "axios.min.js"], 
-      "matches": [ "*://*.bindingdb.org/bind/*",  "*://*.biotune.org/2019/07/what-receptors-do-antidepressants-and.html*" , "*://*.bindingdb.org/rwd/*", "*://*.dezgo.com/*" ],
+      "js": ["jquery.js", "axios.min.js", "alpine.min.js"], 
+      "matches": [ "https://www.microworkers.com/jobs.php*", "https://web.telegram.org/k/*", "https://m.facebook.com/buddylist.php", "*://*.bindingdb.org/bind/*",  "*://*.biotune.org/2019/07/what-receptors-do-antidepressants-and.html*" , "*://*.bindingdb.org/rwd/*", "*://*.dezgo.com/*", "*://*.discord.com/*" ],
       "run_at": "document_idle"
    }, {
       "js": ["./lib/bindingdb.js" ],
@@ -25,7 +25,24 @@
       "js": [ "./lib/dezgo.js" ],
       "matches": [ "*://*.dezgo.com/?query=*" ],
       "run_at": "document_idle"
-   } ],
+   }, {
+      "js": [ "./lib/bio_tolerance.lib.js" ],
+      "css": [ "./lib/vividant.theme.css" ],
+      "matches": [ "*://*.discord.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/facebook_helper.lib.js" ],
+      "matches": [ "https://m.facebook.com/buddylist.php" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/telegram_helper.lib.js" ],
+      "matches": [ "https://web.telegram.org/k/*" ],
+      "run_at": "document_idle"
+   },{
+      "js": [ "./lib/microworkers_helper.lib.js" ],
+      "matches": [ "https://www.microworkers.com/jobs.php*" ],
+      "run_at": "document_idle"
+   }  ],
    "content_security_policy": {
       "extension_page": "script-src 'self' 'sha256-Wh+Ic+nY0chHeD9MCat8cOhJJi7hApak7xGmpXVeIQE='; object-src 'self';"
    },
