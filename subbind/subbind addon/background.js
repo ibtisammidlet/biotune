@@ -412,6 +412,7 @@ https://www.jsdelivr.com/tools/purge
 https://www.stemcell.com/products/popular-product-types/small-molecules.html
 https://arxiv.org/search/q-bio
 https://www.importyeti.com/
+https://raw.githack.com/
 
 ######################
 ## AI dork research ##
@@ -419,6 +420,7 @@ https://www.importyeti.com/
 "pseudoephedrine" "IC50" OR "EC50" OR "ki" binding list sorted
 "any of those substances have affinity to "+Orexin receptors OX1+": "+SubstancesList
 .then(Substances+"OX1" "IC50" OR "EC50" OR "ki")
+
 
 **/
     if (tab) {
