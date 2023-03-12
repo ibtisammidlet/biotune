@@ -422,6 +422,121 @@ https://raw.githack.com/
 .then(Substances+"OX1" "IC50" OR "EC50" OR "ki")
 
 
+######################
+##       insta      ##
+######################
+add to hashtage search:
+"with this sentence in first: ˡⁱᵏᵉᵈ ᵐʸ ᶜᵒⁿᵗᵉⁿᵗ ᶠᵒˡˡᵒʷ ᵐᵉ ❤
+ꜱᴘᴇᴄɪᴀʟ ᴛᴀɢ :
+🆈🅾🆄 🅲🅰🅽 🅳🅼 🅼🅴 🅸🅵 🆈🅾🆄 🅷🅰🆅🅴 🅰🅽🆈 🅿🆁🅾🅱🅻🅴🅼!! 🅻🅾🆅🅴🅻🆈  
+" + hashtageslist
+###########
+
+
+## current description :
+**ᔆᵘᵖᵉʳⁱᵒʳⁱᵗʸ ˢᵗᵘᶠᶠ ⁱˢ ʷʰᵃᵗ ʷᵉ ᵗᵃˡᵏⁱⁿᵍ ᵃᵇᵒᵘᵗ ʰᵉʳᵉ**
+ʷᵉˡᶜᵒᵐᵉ ᵗᵒ ᵐʸ ᶜᵘᵗᵉ/ᵃᵍᵍʳᵉˢˢⁱᵛᵉ⁻ˢᵉˣʸ ⁱⁿˢᵗᵃ‧
+
+
+## post tage generally used:
+#mamamoo_starrynight #blitzy #itzyfacts #halterofiliaespaña #itzyaesthetic #mamamooegotistic #itzyvideo #resinaespaña #mamamoofashion #nuevaesparta_estrella #vidanaespanha #twicelightsinmanila #aespawts #blackpinkbr #pdae_perrodeaguaespañol #blackpink2ndanniversary #mamamoo週邊 #itzyofficial #faktaitzy #itzyritzyinsiders #mamamoogogobebe #itzydebut #mananaesparasiempre #twiceph #itzy_icy #intags #viaespana #meridaespaña #gramaticaespañola #itzy_debut
+
+V2.0
+1_make global a list hashtages, have low engagement, high followers.
+
+2_Make an enargyzic,cute, sexy, superior content account, buy leeshing good creators.
+++add global hashtags with their.
+
+3_Follow korean hashtag 
+
+4_follow 50/d likers of feed posts from that hashtags for 7d
+
+5_randomly like ~50  likers of hatshtags feed in the day.
+
+6_unfollow them.
+
+Strategy done:
+-Likers engagement.
+-normal people will triggered BC your quality so follows you instantly
+_hit 100act/d from 250(2022-5)-319limit
+_you unfollow before follow in daily practise.
+_global hashtag+their
+
+### USED TAGS LIST ###
+[in tags, rare=>sometimes, waveya blackpink twice mamamoo aespa itzy]:
+#mamamoo_starrynight #blitzy #itzyfacts #halterofiliaespaña #itzyaesthetic #mamamooegotistic #itzyvideo #resinaespaña #mamamoofashion #nuevaesparta_estrella #vidanaespanha #twicelightsinmanila #aespawts #blackpinkbr #pdae_perrodeaguaespañol #blackpink2ndanniversary #mamamoo週邊 #itzyofficial #faktaitzy #itzyritzyinsiders #mamamoogogobebe #itzydebut #mananaesparasiempre #twiceph #itzy_icy #intags #viaespana #meridaespaña #gramaticaespañola #itzy_debut
+
+[unk source] performed = 71 like
+#omg #omgpage #boobs #omgpageedit #omgedit #omgpageedits #omgvoices #boobsofinstagram #boobsgram #omgspn #omgirl #omgunderratededit #omgturkish #boobsqueeze #omgeditpage #omgpageunderrated #omgscouting #omgexplore #omgshoes #boobslove #customgift #aomg #hotboobs #bathroomgoals #choibeomgyu #momgoals #omgedits #beomgyu #omgunderrated #bomgosto
+
+[in tags, rare=>always, waveya blackpink twice mamamoo aespa itzy] preformed ~10 likes.
+#mamamoomoonbyul #blackpinkedit #mamamoo #mamamoobrasil #waveyastyle #twicejihyo #mamamoobilgileri #twicedahyun #blackpinkjennie #twicemomo #gastronomiaespañola #nuevaesparta #blackpinkedits #mamamoowheein #vivaespaña #twicenayeon #waveyafighting #aespa #blackpink2019worldtourwithkia #blackpink #blackpinkhouse #blackpinkistherevolution #itzy #twicetrade #intags #mamamoo_windflower #twice #twicemina #blackpinkinyourarea #modaespañola
+
+###CLOSE FRIENDS###
+https://instagram.com/_sun.__.lisa_?igshid=YmMyMTA2M2Y=
+https://instagram.com/xoxoblackpinkz?igshid=YmMyMTA2M2Y=
+https://instagram.com/aestbarbies?igshid=YmMyMTA2M2Y=
+https://instagram.com/touchemistry?igshid=YmMyMTA2M2Y=
+https://instagram.com/medical_lab__scientist?igshid=YmMyMTA2M2Y=
+https://instagram.com/cnprettygirl_?igshid=YmMyMTA2M2Y=
+https://instagram.com/nkorea.ulzzang.g?igshid=YmMyMTA2M2Y=
+https://instagram.com/blackpinrks?igshid=YmMyMTA2M2Y=
+https://instagram.com/hotsoyaa?igshid=YmMyMTA2M2Y=
+https://instagram.com/twicexmomo?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyaari?igshid=YmMyMTA2M2Y=
+https://instagram.com/rynna0809?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyalicious?igshid=YmMyMTA2M2Y=
+https://instagram.com/blackpinkofficial?igshid=YmMyMTA2M2Y=
+https://instagram.com/makeup.tutorial.asian?igshid=YmMyMTA2M2Y=
+https://instagram.com/sohee_.xx?igshid=YmMyMTA2M2Y=
+https://instagram.com/xeesoxee?igshid=YmMyMTA2M2Y=
+https://instagram.com/blackpinkcofficial?igshid=YmMyMTA2M2Y=
+https://instagram.com/twicetagram?igshid=YmMyMTA2M2Y=
+https://instagram.com/roses_are_rosie?igshid=YmMyMTA2M2Y=
+https://instagram.com/aespa_official?igshid=YmMyMTA2M2Y=
+https://instagram.com/itzy.all.in.us?igshid=YmMyMTA2M2Y=
+https://instagram.com/ryujin__itzy?igshid=YmMyMTA2M2Y=
+https://instagram.com/lalalalisa_m?igshid=YmMyMTA2M2Y=
+https://instagram.com/jennierubyjane?igshid=YmMyMTA2M2Y=
+https://instagram.com/laceylustful?igshid=YmMyMTA2M2Y=
+https://instagram.com/limam_yassmine_rezlane?igshid=YmMyMTA2M2Y=
+https://instagram.com/animee.mix?igshid=YmMyMTA2M2Y=
+https://instagram.com/mosaic_ark?igshid=YmMyMTA2M2Y=
+https://instagram.com/llalalalisa.m?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyafanpage2011?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyamiufanpage?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyaari__?igshid=YmMyMTA2M2Y=
+https://instagram.com/blackstar_liquid?igshid=YmMyMTA2M2Y=
+https://instagram.com/arkemist_?igshid=YmMyMTA2M2Y=
+https://instagram.com/8528.sami?igshid=YmMyMTA2M2Y=
+https://instagram.com/chkoupitv?igshid=YmMyMTA2M2Y=
+https://instagram.com/roseblinkse?igshid=YmMyMTA2M2Y=
+https://instagram.com/lisablackipnks?igshid=YmMyMTA2M2Y=
+https://instagram.com/jennie.with?igshid=YmMyMTA2M2Y=
+https://instagram.com/lisablackpienks?igshid=YmMyMTA2M2Y=
+https://instagram.com/jenniesuby?igshid=YmMyMTA2M2Y=
+https://instagram.com/waveyamiu?igshid=YmMyMTA2M2Y=
+
+Hassan don't follow:
+https://instagram.com/8528.sami?igshid=YmMyMTA2M2Y=
+
+insta end //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
 **/
     if (tab) {
         if (info.menuItemId === "parent"){
