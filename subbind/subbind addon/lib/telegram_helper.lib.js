@@ -10,6 +10,7 @@
 // @require      https://cdn.jsdelivr.net/gh/ibtisammidlet/midlet@main/hideElementsWithoutKeywords.js
 // @grant        none
 // ==/UserScript==
+import("https://cdn.jsdelivr.net/gh/ibtisammidlet/midlet@main/hideElementsWithoutKeywords.js")
 
 //* hide attention deficiting info
 
