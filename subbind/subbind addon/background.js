@@ -414,6 +414,7 @@ https://arxiv.org/search/q-bio
 https://www.importyeti.com/
 https://raw.githack.com/
 https://forum.mobilism.org/search.php?keywords=Care&terms=all&author=&sc=1&sf=titleonly&sr=topics&sk=t&sd=d&st=0&ch=300&t=0&sid=ad07ce103f263e3baad3db6e5098b5c5&submit=Search
+https://www.akipharma.com/product_search.html?search-field=tadalafil (promoted by part-time american https://discord.com/channels/1001420842179239936/1019700999016939530/1085323742865002526)
 
 ######################
 ## AI dork research ##
