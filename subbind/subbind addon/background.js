@@ -341,6 +341,66 @@ chrome.contextMenus.create({
   "contexts" : ["all"],
   "parentId": "v1.9.8+",
 });
+chrome.contextMenus.create({
+  "id":"stemcell",
+  "title" : "search in stemcell for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+}); 
+chrome.contextMenus.create({
+  "id":"arxiv",
+  "title" : "search in arxiv for %s",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+}); 
+chrome.contextMenus.create({
+  "id":"githack",
+  "title" : "go to githack [coding]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.8+",
+});
+chrome.contextMenus.create({
+  "id":"mobilism",
+  "title" : "search in mobilism for %s",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+}); 
+chrome.contextMenus.create({
+  "id":"akipharma",
+  "title" : "search in akipharma for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.8+",
+}); 
+chrome.contextMenus.create({
+  "id":"v1.9.9+",
+  "title" : "v1.9.9+",
+  "contexts" : ["all"],
+  "parentId": "v1.9.8+",
+});
+
+
+
+chrome.contextMenus.create({
+  "id":"atlas-filters",
+  "title" : "keyword filter [bot]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.9+",
+});
+chrome.contextMenus.create({
+  "id":"buddylist",
+  "title" : "facebook active friends [helper]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.9+",
+});
+
+
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -387,8 +447,6 @@ v1.9.7+
 https://dezgo.com/ anything 3.0 (anime)
 https://dezgo.com/upscale
 https://www.google.com/search?q=salicin+%22IC50%22+OR+%22EC50%22+OR+%22ki%22
-
-v1.9.8+
 source:https://boards.4channel.org/fit/thread/69921476/nsg-nootssupplements-general
 https://www.buy-pharma.md/Products/search?keyword=care
 https://biolabshop.pl/module/ambjolisearch/jolisearch?s=care
@@ -402,20 +460,21 @@ https://haylla.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=
 https://dz.iherb.com/search?kw=care
 https://novelai.net/stories start from scratch
 
-v1.9.9+
+v1.9.8+
 https://namu.wiki/Search?q=care
 https://www.magpharm.com/index.php?page=products&pages=0&keyword=care
 https://www.alldaychemist.com/catalogsearch/result/?q=care
 https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22care%22&fromSearchBar=true&tbm=youchat
 https://www.jsdelivr.com/github
 https://www.jsdelivr.com/tools/purge
-https://www.stemcell.com/products/popular-product-types/small-molecules.html
-https://arxiv.org/search/q-bio
+https://www.stemcell.com/catalogsearch/result/index/?q=ABT-263&category_option=Products
+https://arxiv.org/search/q-bio?query=modafinil&searchtype=all&abstracts=show&order=-announced_date_first&size=50
 https://www.importyeti.com/
 https://raw.githack.com/
 https://forum.mobilism.org/search.php?keywords=Care&terms=all&author=&sc=1&sf=titleonly&sr=topics&sk=t&sd=d&st=0&ch=300&t=0&sid=ad07ce103f263e3baad3db6e5098b5c5&submit=Search
 https://www.akipharma.com/product_search.html?search-field=tadalafil (promoted by part-time american https://discord.com/channels/1001420842179239936/1019700999016939530/1085323742865002526)
 
+v1.9.9+
 ######################
 ## AI dork research ##
 ######################
@@ -523,12 +582,8 @@ Hassan don't follow:
 https://instagram.com/8528.sami?igshid=YmMyMTA2M2Y=
 
 insta end //
-
-
-
-
-
-
+https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters
+https://m.facebook.com/buddylist.php
 
 
 
@@ -539,7 +594,6 @@ insta end //
 
 */
 
-**/
     if (tab) {
         if (info.menuItemId === "parent"){
       chrome.tabs.create({url: 'https://www.bindingdb.org/rwd/bind/AdvancedSearch.jsp'+'?sources=0&sources=1&sources=2&sources=3&sources=4&sources=5&sources=6&criteria=&choices=compound_name:0:0:0&cn_name:0=exact&cn_text:0='+info.selectionText});
@@ -685,6 +739,38 @@ insta end //
         if (info.menuItemId === "jsdelivr-purge"){
       chrome.tabs.create({url: 'https://www.jsdelivr.com/tools/purge'});
         }
+        if (info.menuItemId === "stemcell"){
+      chrome.tabs.create({url: 'https://www.stemcell.com/catalogsearch/result/index/?q='+info.selectionText+'&category_option=Products'});
+        }
+        if (info.menuItemId === "arxiv"){
+      chrome.tabs.create({url: 'https://arxiv.org/search/q-bio?query='+info.selectionText+'&searchtype=all&abstracts=show&order=-announced_date_first&size=50'});
+        }
+        if (info.menuItemId === "githack"){
+      chrome.tabs.create({url: 'https://raw.githack.com/'});
+        }
+        if (info.menuItemId === "mobilism"){
+      chrome.tabs.create({url: 'https://forum.mobilism.org/search.php?keywords='+info.selectionText+'&terms=all&author=&sc=1&sf=titleonly&sr=topics&sk=t&sd=d&st=0&ch=300&t=0&sid=ad07ce103f263e3baad3db6e5098b5c5&submit=Search'});
+        }
+        if (info.menuItemId === "akipharma"){
+      chrome.tabs.create({url: 'https://www.akipharma.com/product_search.html?search-field='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+
+
+
+        if (info.menuItemId === "atlas-filters"){
+      chrome.tabs.create({url: 'https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters'});
+        }
+        if (info.menuItemId === "buddylist"){
+      chrome.tabs.create({url: 'https://m.facebook.com/buddylist.php'});
+        }
+
+
+
+
+
+
+
+
 
     }
 
