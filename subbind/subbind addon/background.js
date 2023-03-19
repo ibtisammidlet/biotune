@@ -1,10 +1,6 @@
 chrome.action.onClicked.addListener(function(tab) {
       chrome.tabs.create({url: 'https://www.biotune.org/p/subbind.html'});
-    // Tab opened.
-  });
-
-
-
+});
 
 
 
@@ -12,84 +8,84 @@ chrome.contextMenus.create({
   "id":"RCD",
   "title" : "find %s in receptors concept db",
   "type" : "normal",
-  "contexts" : ["all"],
+  "contexts" : ["all"]
 });
 chrome.contextMenus.create({
   "id":"parent",
   "title" : "find binding for %s",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"GTP",
   "title" : "search in guidetopharmacology",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"europepmc",
   "title" : "search in europepmc [ML]",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"springernature",
   "title" : "search in springernature [ML]",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"biomedcentral",
   "title" : "search in biomedcentral [ML]",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"portlandpress",
   "title" : "search in portlandpress [ML]",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"medscape",
   "title" : "search in medscape [ML]",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"drugbank",
   "title" : "search in drugbank",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"psychonautwiki",
   "title" : "search in psychonautwiki",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"erowid",
   "title" : "search in erowid",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"thedrugclassroom",
   "title" : "search in thedrugclassroom",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"nootropicsindex",
   "title" : "search in nootropicsindex",
   "type" : "normal",
-  "contexts" : ["selection"],
+  "contexts" : ["selection"]
 });
 chrome.contextMenus.create({
   "id":"v1.9.5+",
   "title" : "v1.9.5+",
-  "contexts" : ["all"],
+  "contexts" : ["all"]
 });
 
 
@@ -99,28 +95,29 @@ chrome.contextMenus.create({
   "title" : "search in neeva [AI]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.5+",
+  "parentId": "v1.9.5+"
 });
 chrome.contextMenus.create({
   "id":"you",
   "title" : "ask youchat [AI]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.5+",
+  "parentId": "v1.9.5+"
 });
 chrome.contextMenus.create({
   "id":"sci-hub",
   "title" : "find this article on sci-hub",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.5+",
+  "parentId": "v1.9.5+"
 });
 chrome.contextMenus.create({
   "id":"v1.9.6+",
   "title" : "v1.9.6+",
   "contexts" : ["all"],
-  "parentId": "v1.9.5+",
+  "parentId": "v1.9.5+"
 });
+
 
 
 chrome.contextMenus.create({
@@ -128,92 +125,90 @@ chrome.contextMenus.create({
   "title" : "search for %s in malacards [gene]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
-
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"medicament-dz",
   "title" : "search for %s in medicament-dz [dork]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
-
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"drugs.com",
   "title" : "search for dosage of %s in drugs.com [dork]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"stackoverflow",
   "title" : "search for %s in stackoverflow.com [coding]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"github",
   "title" : "search in github for %s [coding]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"gitlab",
   "title" : "search in gitlab for %s [coding]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"wholisticresearch",
   "title" : "go to wholisticresearch [ven]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"pglchem",
   "title" : "search in pglchem for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"nootropicsfrontline",
   "title" : "search in nootropicsfrontline for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"russianmeds",
   "title" : "search in russianmeds for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"everychem",
   "title" : "search in everychem for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 chrome.contextMenus.create({
   "id":"alphagresearch",
   "title" : "search in alphagresearch for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 }); 
 chrome.contextMenus.create({
   "id":"v1.9.7+",
   "title" : "v1.9.7+",
   "contexts" : ["all"],
-  "parentId": "v1.9.6+",
+  "parentId": "v1.9.6+"
 });
 
 
@@ -238,55 +233,55 @@ chrome.contextMenus.create({
   "title" : "globle binding search for %s [dork]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"buy-pharma",
   "title" : "search in buy-pharma for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"biolabshop",
   "title" : "search in biolabshop for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"trc-canada",
   "title" : "search in trc-canada for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"purelifedz",
   "title" : "search in purelifedz for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"haylla",
   "title" : "search in haylla for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 chrome.contextMenus.create({
   "id":"iherb",
   "title" : "search in iherb for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 }); 
 chrome.contextMenus.create({
   "id":"v1.9.8+",
   "title" : "v1.9.8+",
   "contexts" : ["all"],
-  "parentId": "v1.9.7+",
+  "parentId": "v1.9.7+"
 });
 
 
@@ -304,83 +299,83 @@ chrome.contextMenus.create({
   "title" : "search in namu.wiki for %s",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"magpharm",
   "title" : "search in magpharm for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"alldaychemist",
   "title" : "search in alldaychemist for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"you.random.hashtag",
   "title" : "ganerate hashtag for %s [AI]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"jsdelivr",
   "title" : "go to jsdelivr [coding]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"jsdelivr-purge",
   "title" : "go to jsdelivr purge [coding]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"stemcell",
   "title" : "search in stemcell for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 }); 
 chrome.contextMenus.create({
   "id":"arxiv",
   "title" : "search in arxiv for %s",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 }); 
 chrome.contextMenus.create({
   "id":"githack",
   "title" : "go to githack [coding]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 chrome.contextMenus.create({
   "id":"mobilism",
   "title" : "search in mobilism for %s",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 }); 
 chrome.contextMenus.create({
   "id":"akipharma",
   "title" : "search in akipharma for %s [ven]",
   "type" : "normal",
   "contexts" : ["selection"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 }); 
 chrome.contextMenus.create({
   "id":"v1.9.9+",
   "title" : "v1.9.9+",
   "contexts" : ["all"],
-  "parentId": "v1.9.8+",
+  "parentId": "v1.9.8+"
 });
 
 
@@ -390,14 +385,14 @@ chrome.contextMenus.create({
   "title" : "keyword filter [bot]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.9+",
+  "parentId": "v1.9.9+"
 });
 chrome.contextMenus.create({
   "id":"buddylist",
   "title" : "facebook active friends [helper]",
   "type" : "normal",
   "contexts" : ["all"],
-  "parentId": "v1.9.9+",
+  "parentId": "v1.9.9+"
 });
 
 
@@ -407,7 +402,6 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 you can't use contains"substance name" in url requset
 because it will make the addon not scrap some substnace
 due to deffernt subtance sapartor in bindingdb page.
-
 
 APi:
 https://www.springernature.com/gp/find?queryString=care&pageNumber=1
@@ -636,6 +630,7 @@ https://m.facebook.com/buddylist.php
         }
 
 
+
         if (info.menuItemId === "neeva"){
       chrome.tabs.create({url: 'https://neeva.com/search?q='+info.selectionText+'&c=All&src=typedquery'});
         }
@@ -645,6 +640,7 @@ https://m.facebook.com/buddylist.php
         if (info.menuItemId === "sci-hub"){
       chrome.tabs.create({url: 'https://sci-hub.hkvisa.net/'+info.pageUrl+''});
         }
+
 
 
         if (info.menuItemId === "malacards"){
@@ -685,6 +681,7 @@ https://m.facebook.com/buddylist.php
         }
 
 
+
         if (info.menuItemId === "dezgo_anime"){
             chrome.tabs.create({url: 'https://dezgo.com/?query='+info.selectionText+''}, 
                 function(tab) {
@@ -719,6 +716,7 @@ https://m.facebook.com/buddylist.php
         if (info.menuItemId === "iherb"){
       chrome.tabs.create({url: 'https://dz.iherb.com/search?kw='+info.selectionText});
         }
+
 
 
         if (info.menuItemId === "namu.wiki"){
@@ -775,9 +773,3 @@ https://m.facebook.com/buddylist.php
     }
 
 });
-
-
-
-
-
-

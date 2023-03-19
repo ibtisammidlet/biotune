@@ -47,11 +47,9 @@
       "matches": [ "https://github.com/search?q=*&type=repositories*" ],
       "run_at": "document_idle"
    }   
-
-
-
-
 ],
+
+
    "content_security_policy": {
       "extension_page": "script-src 'self' 'sha256-Wh+Ic+nY0chHeD9MCat8cOhJJi7hApak7xGmpXVeIQE='; object-src 'self';"
    },
