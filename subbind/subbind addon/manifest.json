@@ -27,13 +27,12 @@
       "run_at": "document_idle"
    }, {
       "js": [ "./lib/bio_tolerance.lib.js" ],
-      "css": [ "./lib/vividant.theme.css" ],
       "matches": [ "*://*.discord.com/*" ],
       "run_at": "document_idle"
-   }, {
-      "js": [ "./lib/facebook_helper.lib.js" ],
-      "matches": [ "https://m.facebook.com/buddylist.php" ],
-      "run_at": "document_idle"
+   }, {"js": ["./lib/facebook_helper.lib.js"],
+      "matches": ["https://m.facebook.com/buddylist.php"],
+      "run_at": "document_idle",
+      "content_security_policy": "script-src 'self' 'unsafe-eval' https://raw.githack.com; object-src 'self'"
    }, {
       "js": [ "./idle/hideElementsWithoutKeywords.js", "./lib/telegram_helper.lib.js" ],
       "matches": [ "https://web.telegram.org/k/*" ],
@@ -48,6 +47,9 @@
       "run_at": "document_idle"
    }   
 ],
+
+
+
 
 
    "content_security_policy": {
@@ -66,7 +68,7 @@
    "name": "subbind",
    "permissions": [ "contextMenus" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.9.8.23227",
+   "version": "1.9.8.23319",
    
    "options_ui": {
    "page": "options.html",

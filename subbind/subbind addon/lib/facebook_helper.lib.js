@@ -1,3 +1,15 @@
+// liblets
+function waitForElement(id, callback){
+    var poops = setInterval(function(){
+        if($(id).length){
+            clearInterval(poops);
+            callback();
+        }
+    }, 100);
+}
+
+
+
 /*
 // ==UserScript==
 // @name         facebook active friends scraper
@@ -50,36 +62,55 @@ $('#clickMe').remove();
 };
 */
 
-$( "#rootcontainer" ).append('<input id="clickMe" type="button" value="start"/>');
+/** dynamic import content_script.js
+const dynamicImport = () => {
+  const src = chrome.runtime.getURL('https://raw.githack.com/ibtisammidlet/midlet/main/waitForElement.js')
+  import(src).catch(e => {
+    console.error(e)
+  })
+}
 
-document.getElementById("clickMe").onclick = $(async function() {
-    var eduarray = [];
-	
-$('#mobile_buddylist div.item.buddylistItem').each(function(index, el) { //** used :visible because in time of coding i was using .hide() instead of .remove()
-var idwithmbuddy = $(this).attr('id');
-var id = idwithmbuddy.split("m_buddy_")
-var name = $(this).find("a div").find("strong").text();
-
-eduarray.push({"id": id,  "name": name});
-})
+dynamicImport()
+ */
+/*
+$( "head" ).append(`
+<script src="https://raw.githack.com/ibtisammidlet/midlet/main/waitForElement.js"></script>
+`);
+*/
 
 
-$(document).on('click','#clickMe', function(){
-	
-	
-    console.log(eduarray);
-$.ajax({
-        url: "http://localhost/subbind/facebook-helper",
-        type: 'GET',
-		data: JSON.stringify(eduarray),
-        dataType: 'json', // added data type
-        success: function(res) {
-            console.log(res);
-            alert(res);
-        }
-});	
+waitForElement("#mobile_buddylist div.item.buddylistItem", function(){
+
+let eduarray = []
+
+async function make() {
+  $('#mobile_buddylist div.item.buddylistItem').each(function(index, el) { //** used :visible because in time of coding i was using .hide() instead of .remove()
+    var idwithmbuddy = $(this).attr('id');
+    var id = idwithmbuddy.split("m_buddy_")
+    var name = $(this).find("a div").find("strong").text();
+    eduarray.push({"id": id,  "name": name});
+
+    if ( $(this).is(':last-child') ) { return false; } 
+  });
+}
+
+const send = async (eduarray) => {
+  console.log(eduarray);
+  $.ajax({
+    url: "http://localhost/subbind/facebook-helper",
+    type: 'GET',
+    data: JSON.stringify(eduarray),
+    dataType: 'json', // added data type
+    success: function(res) {
+      console.log(res);
+      alert(res);
+    }
+  });	
+}
+
+(async () => {
+  await make(); // wait for the `make` function to complete before calling `send`
+  send(eduarray); // call the `send` function with the `eduarray`
+})();
+
 });
-
-
-});
-
