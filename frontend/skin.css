@@ -510,7 +510,7 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, ci
 }
  .post {
      display: block;
-     overflow: hidden;
+/* overflow: hidden;  */ 
      word-wrap: break-word 
 }
  .index article {
@@ -720,7 +720,7 @@ margin: 0 5px;
      width: 100%;
      font-size: 15px;
      line-height: 1.5em;
-<!-- overflow: hidden  --> 
+/* overflow: hidden */
 }
  .item .post-outer {
      padding: 0 
