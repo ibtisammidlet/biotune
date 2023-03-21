@@ -3,3 +3,12 @@ overflow-y: scroll !important;
 max-height: 24rem !important;
 min-width: 36rem !important;
 }
+
+@media screen and (max-width: 0px),
+       screen and (min-width: 0px) and (max-width: 599.99px),
+       screen and (min-width: 600px) and (max-width: 768.99px),
+       screen and (min-width: 769px) and (max-width: 991.99px),
+       screen and (min-width: 992px) and (max-width: 1299.99px),
+       screen and (min-width: 1300px) {
+  /* Disable all of the Bulma breakpoints */
+}
