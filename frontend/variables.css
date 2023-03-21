@@ -1,0 +1,12 @@
+/* Variable definitions
+-----------------------
+<Variable name="body.background" description="Background" type="background" color="#ffffff" default="$(color) url() repeat scroll top left" value="$(color) url() repeat scroll top left"/>
+<Variable name="color.theme" description="Color Theme" type="color" default="#23adff" value="#23adff"/>
+-----------------------
+*/
+
+
+:root {
+  --body-background: $(color) url() repeat scroll top left;
+  --color-theme: #23adff;
+}
