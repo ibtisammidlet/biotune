@@ -24,78 +24,78 @@
 + Panama	0.0168	0.11	1.848
 + Italy	0.0135	0.13	1.755
 + Solomon Islands	0.0435	0.04	1.74
-+ Kuwait	0.0156	0.11	1.716
++ Kuwait	0.0156	0.11	1.716 (subbind not found)
 + Norway	0.0063	0.26	1.638
 + Japan	0.0114	0.14	1.596
-+ Unknown Region	0.0063	0.25	1.575
-+ Oman	0.0143	0.11	1.573
-+ Botswana	0.0138	0.11	1.518
++ Unknown Region	0.0063	0.25	1.575 (subbind not found)
++ Oman	0.0143	0.11	1.573  (subbind not found)
++ Botswana	0.0138	0.11	1.518 (subbind not found)
 + Saudi Arabia	0.0164	0.09	1.476
-+ Paraguay	0.0482	0.03	1.446
++ Paraguay	0.0482	0.03	1.446 (subbind not found)
 + Thailand	0.008	0.17	1.36
 + Israel	0.0121	0.11	1.331
 + France	0.0076	0.17	1.292
 + Spain	0.0067	0.19	1.273
 + Switzerland	0.0059	0.21	1.239
-+ Dominican Republic	0.0112	0.11	1.232
++ Dominican Republic	0.0112	0.11	1.232 (subbind not found)
 + Hong Kong	0.0094	0.13	1.222
-+ Qatar	0.0122	0.1	1.22
-+ Guatemala	0.0074	0.16	1.184
-+ India	0.0164	0.07	1.148
++ Qatar	0.0122	0.1	1.22  (subbind not found)
++ Guatemala	0.0074	0.16	1.184 (subbind not found)
++ India	0.0164	0.07	1.148 (remove this)
 + Germany	0.0052	0.22	1.144
-+ Somalia	0.0094	0.12	1.128
++ Somalia	0.0094	0.12	1.128 (subbind not found)
 + Belgium	0.0053	0.21	1.113
-+ Mongolia	0.0157	0.07	1.099
++ Mongolia	0.0157	0.07	1.099 (subbind not found)
 + Argentina	0.0109	0.1	1.09
-+ Afghanistan	0.0135	0.08	1.08
-+ Philippines	0.0266	0.04	1.064
-+ Malaysia	0.0094	0.11	1.034
++ Afghanistan	0.0135	0.08	1.08 (remove this)
++ Philippines	0.0266	0.04	1.064 (remove this)
++ Malaysia	0.0094	0.11	1.034 (remove this)
 + Greece	0.0064	0.16	1.024
 + Brazil	0.0079	0.12	0.948
-+ French Polynesia	0.0833	0.01	0.833
-+ South Korea	0.0082	0.1	0.82
++ French Polynesia	0.0833	0.01	0.833 (subbind not found)
++ South Korea	0.0082	0.1	0.82 (subbind not found)
 + China	0.0066	0.11	0.726
 + Russia	0.0039	0.15	0.585
 + Mexico	0.0039	0.14	0.546
 + Portugal	0.0074	0.07	0.518
-+ Liberia	0.0247	0.02	0.494
++ Liberia	0.0247	0.02	0.494 (subbind not found)
 + Colombia	0.0029	0.17	0.493
-+ Lebanon	0.0162	0.03	0.486
++ Lebanon	0.0162	0.03	0.486 (subbind not found)
 + Taiwan	0.0154	0.03	0.462
 + Indonesia	0.0073	0.06	0.438
 + Romania	0.0071	0.06	0.426
-+ Caribbean Netherlands	0.0183	0.02	0.366
++ Caribbean Netherlands	0.0183	0.02	0.366 (subbind not found)
 + Poland	0.004	0.07	0.28
-+ Swaziland	0.0067	0.03	0.201
++ Swaziland	0.0067	0.03	0.201 (subbind not found)
 + Chile	0.0049	0.02	0.098
 + Ukraine	0.0032	0.03	0.096
 
 ## from me	x	x	x
-+ Albania	0.821	0.803	0.567
++ Albania	0.821	0.803	0.567 (subbind not found)
 
 ## Country	Religious	Total Athiests 	
 + Czech Republic	0.24	0.75	
-+ Slovenia	0.41	0.59	
-+ Iceland	0.46	0.54	
++ Slovenia	0.41	0.59	 (subbind not found)
++ Iceland	0.46	0.54	 (subbind not found)
 
 ## "English Speaking Countries 2022"	Is Primary?	De facto?	De jure?
-+ Antigua and Barbuda	Yes	Yes	Yes
-+ Belize	No	Yes	Yes
-+ Eritrea	No	No	Yes (see note)
-+ Eswatini	No (Swazi)	No	Yes (see note)
-+ Grenada	Yes (see note)	Yes	Yes
-+ Kiribati	No	No	Yes
-+ Lesotho	No (Sesotho)	No	Yes (see note)
-+ Micronesia	No (Chuukese)	Yes	Yes
-+ Saint Kitts and Nevis	Yes	Yes	Yes
-+ Saint Lucia	No (Creole French)	No	Yes
-+ Saint Vincent and the Grenadines	Yes	Yes	Yes
-+ Samoa	No	No	Yes (see note)
-+ South Sudan	No (Nuer/Dinka)	No	Yes
-+ Tonga	No (Tongan)	No	Yes (see note)
-+ Trinidad and Tobago	Yes	Yes	Yes
-+ Tuvalu	No (Tuvaluan)	No	Yes (see note)
-+ Vanuatu	No	No	Yes (see note)
++ Antigua and Barbuda	Yes	Yes	Yes (subbind not found)
++ Belize	No	Yes	Yes (subbind not found)
++ Eritrea	No	No	Yes (see note) (subbind not found)
++ Eswatini	No (Swazi)	No	Yes (see note) (subbind not found)
++ Grenada	Yes (see note)	Yes	Yes (subbind not found)
++ Kiribati	No	No	Yes (subbind not found)
++ Lesotho	No (Sesotho)	No	Yes (see note) (subbind not found)
++ Micronesia	No (Chuukese)	Yes	Yes (subbind not found)
++ Saint Kitts and Nevis	Yes	Yes	Yes (subbind not found)
++ Saint Lucia	No (Creole French)	No	Yes (subbind not found)
++ Saint Vincent and the Grenadines	Yes	Yes	Yes (subbind not found)
++ Samoa	No	No	Yes (see note) (subbind not found)
++ South Sudan	No (Nuer/Dinka)	No	Yes (subbind not found)
++ Tonga	No (Tongan)	No	Yes (see note) (subbind not found)
++ Trinidad and Tobago	Yes	Yes	Yes (subbind not found)
++ Tuvalu	No (Tuvaluan)	No	Yes (see note) (subbind not found)
++ Vanuatu	No	No	Yes (see note) (subbind not found)
 
 # disallowed
 ## low cpc	x	x	x
