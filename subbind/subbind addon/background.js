@@ -473,8 +473,23 @@ v1.9.9+
 ## AI dork research ##
 ######################
 "pseudoephedrine" "IC50" OR "EC50" OR "ki" binding list sorted
-"any of those substances have affinity to "+Orexin receptors OX1+": "+SubstancesList
-.then(Substances+"OX1" "IC50" OR "EC50" OR "ki")
+
+"any of those substances have affinity to : "+SubstancesList  ##############
+.then(Substances+"OX1" "IC50" OR "EC50" OR "ki")              ## outdated ##
+                                                              ##############
+
+"give me from those substances who have 1000nm ki, IC50 , EC50 and potent to "+alpha2a adrenergic receptors+" : "+SubstancesList
+$.expeceted("
+Clonidine: Kd = 0.18 nM
+Dexchlorpheniramine: IC50 = 15 nM
+Betaxolol: IC50 = 77 nM
+Nebivolol: IC50 = 112 nM
+Atenolol: IC50 = 181 nM
+Metoprolol: IC50 = 1.7 μM
+Timolol: IC50 = 28 μM
+")
+
+
 
 
 ######################
