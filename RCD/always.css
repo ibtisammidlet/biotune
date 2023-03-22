@@ -31,3 +31,6 @@
 .section {
     padding: unset !important;
 }
+td {
+    border-radius: unset !important;
+}
