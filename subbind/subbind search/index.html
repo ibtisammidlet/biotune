@@ -1,0 +1,273 @@
+<style>
+    /* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVIGxA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4kaVIGxA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4saVIGxA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4jaVIGxA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4iaVIGxA.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4vaVIGxA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVIGxA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton, select.searchDropdown {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 33%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#comments {
+    display: none;
+}
+  .sidebar-wrapper {
+    display: none;
+}
+  .post-head {
+    text-align: center;
+}
+  #main-wrapper {
+    width: 100% !important;
+}
+
+  h1.post-title.entry-title {
+    display: none;
+}
+.post {
+    height: 350px;
+}
+.separator {
+    float: left;
+    margin-right: 10px;
+}
+  p#subbind-title {
+    margin: 9%;
+    font-size: 31px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #657585;
+
+}
+  div#outer-wrapper {
+    min-height: 100%;
+  }
+select.searchDropdown {
+    border-radius: 0;
+    width: 40%;
+    font-size: 15px;
+}
+  </style>
+
+<body>
+    <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>Hover me</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+            </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+            <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <h1 style="text-align: left;"><br /></h1>
+                    <div style="text-align: left;">
+                        <div style="text-align: left;">
+                            <div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM_HDLf6IyFrcxaqMitw1OC4lyEKTtK_cHUGY-s5oDVILf3AGdfmEucH50-olbTFLrjl-06J9Fxj2DATR-Fc-Krzlo6G3QfbyyvWA9BXh8DqpFbZ8-bTQwPFKWgjWure6-GT0clExD0yyC94Ho9U2tN70cVzdAlBw1OLkmLDX194UyQ-to0mvUGtyd/s607/search.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="291" data-original-width="607" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM_HDLf6IyFrcxaqMitw1OC4lyEKTtK_cHUGY-s5oDVILf3AGdfmEucH50-olbTFLrjl-06J9Fxj2DATR-Fc-Krzlo6G3QfbyyvWA9BXh8DqpFbZ8-bTQwPFKWgjWure6-GT0clExD0yyC94Ho9U2tN70cVzdAlBw1OLkmLDX194UyQ-to0mvUGtyd/s16000/search.PNG" /></a></div>
+                        </div>
+                    </div>
+                    <p style="text-align: center;">or by contextual menu</p>
+                    <div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYte3H1uyrCoUCgKw9jhah6fDPHBRrV_au4nC9fPQugf4EaIRZZhvuXN-H0pUSO8gm3UV67ahJxs2PM96lcEfXhB4bbwFJOn0RtW6_XGq6VJZa7Wulo7VuF1KrIyAGzPVVWM_zfCT4VVa7pFApTLH5wp2ksyxP52zbljIFCElf9DAxCir9yf2eX6DA/s453/contextual%20menu.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="335" data-original-width="453" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYte3H1uyrCoUCgKw9jhah6fDPHBRrV_au4nC9fPQugf4EaIRZZhvuXN-H0pUSO8gm3UV67ahJxs2PM96lcEfXhB4bbwFJOn0RtW6_XGq6VJZa7Wulo7VuF1KrIyAGzPVVWM_zfCT4VVa7pFApTLH5wp2ksyxP52zbljIFCElf9DAxCir9yf2eX6DA/s16000/contextual%20menu.PNG" /></a></div>
+                    <p style="text-align: center;"><br /></p>
+                    <p style="text-align: center;">the addon will travel you pages automatically and evently show something like this</p>
+                    <p style="text-align: center;">you can click on Target/Host to sort the table using that</p>
+                    <p style="text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf1TUOJTGfIyoLyWA-vW4aH5ksaUU8goIPDKcxPWLeHQJH4R6M7FKiIV33cY5WPyZsc_AHq2sUOr2snjZ2KuBRWJgDMEhKV3suawWQxwsTfOwr1xKXWxqZpbx7jsz63g183-ujhh7XHaTkVJeq-F3vTq6heUIHKm47M70ByafUzMtZe-90wsMIairC/s1280/AdvancedSearch%201280px.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="800" data-original-width="1280" height="400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf1TUOJTGfIyoLyWA-vW4aH5ksaUU8goIPDKcxPWLeHQJH4R6M7FKiIV33cY5WPyZsc_AHq2sUOr2snjZ2KuBRWJgDMEhKV3suawWQxwsTfOwr1xKXWxqZpbx7jsz63g183-ujhh7XHaTkVJeq-F3vTq6heUIHKm47M70ByafUzMtZe-90wsMIairC/w640-h400/AdvancedSearch%201280px.png" width="640" /></a></p>
+                    <p style="text-align: center;"><b></b></p>
+                    <p style="text-align: center;"></p>
+                    <p style="-webkit-text-stroke-width: 0px; color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"></p>
+                    <p></p>
+                    <p style="-webkit-text-stroke-width: 0px; color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><b><b>Ki nM&nbsp;</b>= mean how well the substance can bind to a receptor =the lower the better</b></p>
+                    <p></p>
+                    <p style="text-align: center;"><b>IC50</b> = <span class="ILfuVd"><span class="hgKElc">Half-maximal inhibitory concentration <b>=</b>&nbsp;</span></span>the lower the better <b>= </b>mean antagonist<br /></p>
+                    <p style="text-align: center;"><b>EC50&nbsp;</b>= Half maximal effective concentration = the lower the better = mean agonist</p>
+                    <p style="text-align: center;"><b>Kd nM</b> = The equilibrium dissociation constant. represents the concentration of radioligand. occupying half of the maximum receptor. = the lower the better = its mean the how well the drug can bind to receptor (like ki nm)<br /></p>
+                    <p style="text-align: center;"><span class="ILfuVd NA6bn"><span class="hgKElc"><b>Emax/ imax&nbsp;</b>= efficacy = </span></span><span class="ILfuVd NA6bn"><span class="hgKElc">the higher the better = its not available in bindingdb.org</span></span></p>
+                    <p style="text-align: center;"></p>
+                    <p style="text-align: center;"><br /></p>
+                    <p style="text-align: center;"><b></b></p>
+                    <p style="-webkit-text-stroke-width: 0px; color: black; font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">if you want to calculate selectivity then copy the content</p>
+                    <div style="text-align: center;">go to excel and past that content, you will have something like this</div>
+                    <p></p>
+                    <p style="text-align: center;">select receptor Ki nM like this<br /></p>
+                    <div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-ObYqP_nXycc/YQq4rh8ppYI/AAAAAAAAHq8/iltZRb9SyNQ6H39d6RPbqcxbrghm5vj4QCLcBGAsYHQ/s551/5.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="154" data-original-width="551" src="https://1.bp.blogspot.com/-ObYqP_nXycc/YQq4rh8ppYI/AAAAAAAAHq8/iltZRb9SyNQ6H39d6RPbqcxbrghm5vj4QCLcBGAsYHQ/s16000/5.PNG" /></a></div><br />
+                    <p style="text-align: center;">in bottom corner of excel you will see the median Ki value for that target</p>
+                    <p style="text-align: center;"></p>
+                    <div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-lPAq53EMtEk/YQq44gxTHBI/AAAAAAAAHrA/j0wFyhRMCB8eVzjSRF3Xb9ckdNvhp59ngCLcBGAsYHQ/s288/6.PNG" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="47" data-original-width="288" height="47" src="https://1.bp.blogspot.com/-lPAq53EMtEk/YQq44gxTHBI/AAAAAAAAHrA/j0wFyhRMCB8eVzjSRF3Xb9ckdNvhp59ngCLcBGAsYHQ/s0/6.PNG" width="288" /></a></div><br />
+                    <p></p>
+                    <div style="text-align: center;"><br /></div>
+                    <div style="text-align: center;">
+                        <div style="text-align: left;">change log:</div>
+                        <div style="text-align: left;">v1.9</div>
+                        <div style="text-align: left;">-ported as addon with full automation and new features</div>
+                        <div style="text-align: left;">v0.5</div>
+                        <div style="text-align: left;">-fix problem after bindingdb.org last update (now always visit https version of the site)<br /></div>
+                        <div style="text-align: left;">v0.5</div>
+                        <div style="text-align: left;">-fix rare case where the script can't fetch all results in one time</div>
+                        <div style="text-align: left;">-better javascript codes with the same function<br /></div>
+                        <div style="text-align: left;">v0.4</div>
+                        <div style="text-align: left;">-fix "delete non human study if human study is available for specific receptor" button not working after sorting the table</div>
+                        <div style="text-align: left;">-add link to check update for this script<br /></div>
+                        <div style="text-align: left;">v0.3</div>
+                        <div style="text-align: left;">-fix the button "click here to start fetching data and wait.." don't work when the substance has less then 50 result<br /></div>
+                        <div style="text-align: left;">v0.2</div>
+                        <div style="text-align: left;">-better style in some browsers<br />v0.1<br />-first version<br />-table sorting when click on first table row, you can sort alphabetically by Target/Host, species, KinM, IC50nM, kd nm, EC50nM<br />-give alert when data was not fully loaded<br />-set a link to fetch all data instead of 50 everytime<br />-delete non human study if human study is available</div>
+                        <div style="text-align: left;"><br /></div>
+                    </div>
+                    <div class="separator" style="clear: both; text-align: center;"></div>
+                    <div class="separator" style="clear: both; text-align: center;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBCF9pAZlSCwiN4JU7sY9gbJ5kRZ1xBAihAy1LZFeOXdJvOx7A2CB7MzsoHylHEkkOUj3gWO39Z2mMIexcem772ZtiCMuhUeF_9fWoRfgSnx5r7u2UJihWcDN2GR0F3YCQS_qIHKRjYAp2f6n2MIi8ZFqRHK60dxw5Jsrxd2Zu1YfNxdFtO6rPAf9j/s81/traidnt%20logo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="81" data-original-width="81" height="81" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBCF9pAZlSCwiN4JU7sY9gbJ5kRZ1xBAihAy1LZFeOXdJvOx7A2CB7MzsoHylHEkkOUj3gWO39Z2mMIexcem772ZtiCMuhUeF_9fWoRfgSnx5r7u2UJihWcDN2GR0F3YCQS_qIHKRjYAp2f6n2MIi8ZFqRHK60dxw5Jsrxd2Zu1YfNxdFtO6rPAf9j/s1600/traidnt%20logo.png" width="81" /></a></div>
+        <p id="subbind-title">subbind search</p>
+        <form class="search">
+            <input class="searchTerm" id="input" list="suggestions" placeholder="DCI name.." type="text" value="" />
+            <select class="searchDropdown" name="searchOption">
+                <option value="substance">substance</option>
+                <option value="receptor">receptor</option>
+            </select>
+            <button class="searchButton" onclick="search()" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+            <datalist id="suggestions"></datalist>
+        </form>
+    </div>
+    <script>
+    function search() {
+        event.preventDefault()
+        window.open('https://www.bindingdb.org/rwd/bind/AdvancedSearch.jsp?' + 'sources=0&sources=1&sources=2&sources=3&sources=4&sources=5&sources=6&criteria=&choices=compound_name:0:0:0&cn_name:0=exact&cn_text:0=' + $('.searchTerm').val(), "_blank")
+    }
+
+    //** Google search suggestions
+    const input = document.getElementById('input'),
+        suggestions = document.getElementById('suggestions');
+
+    input.onkeyup = GetSuggestions;
+
+    function handleData(data) {
+        suggestions.innerHTML = '';
+        data[1].forEach(term => suggestions.insertAdjacentHTML('beforeend', `<option>${term}</option>`));
+    }
+
+    function GetSuggestions(e) {
+        let script = document.createElement('script');
+        script.src = `https://suggestqueries.google.com/complete/search?output=chrome&q=${e.target.value}&callback=handleData`;
+        document.body.appendChild(script);
+        script.onload = (e) => script.remove();
+    }
+    </script>
+</body>
+<div style="padding-left: 15px;">get the <u><a href="https://chrome.google.com/webstore/detail/subbind/hdlnkhfddbapfdllojdhlepocncbckkp" rel="nofollow" target="_blank">addon</a></u> first!</div>
