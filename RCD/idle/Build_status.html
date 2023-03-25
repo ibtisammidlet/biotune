@@ -1,0 +1,63 @@
+<div class="build-badge">
+    <span class="build-badge__label">build</span><span class="build-badge__status build-badge__status-success">succeeded</span>
+    <span class="build-badge__label">build</span><span class="build-badge__status build-badge__status-warning">partially succeeded</span>
+    <span class="build-badge__label">build</span><span class="build-badge__status build-badge__status-error">failed</span>
+    <span class="build-badge__label">build</span><span class="build-badge__status build-badge__status-indeterminate">never built</span>
+    <span class="build-badge__label">build</span><span class="build-badge__status build-badge__status-information">setup now</span>
+</div>
+<style>
+body {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+    content: " ";
+}
+
+.build-badge {
+    background-color: pink;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.build-badge__label,
+.build-badge__status {
+    display: inline-block;
+    padding: 0 6px 1px 6px;
+}
+
+.build-badge__label {
+    background-color: #333;
+    color: #fff;
+}
+
+.build-badge__status-success {
+    background-color: #4BAE4F;
+    color: #fff;
+}
+
+.build-badge__status-warning {
+    background-color: #FEC006;
+    color: #000;
+}
+
+.build-badge__status-error {
+    background-color: #F34235;
+    color: #fff;
+}
+
+.build-badge__status-information {
+    background-color: #007ACC;
+    color: #fff;
+}
+
+.build-badge__status-indeterminate {
+    background-color: #E0E0E0;
+    color: #000;
+}
+</style>

@@ -25,7 +25,7 @@
     </style>`); 
     } else { //** in desktop
     $( "head" ).append(`<style>
-    #RFD td { border: 0.5pt solid #3F3F3F !important; border-right: none !important; border-bottom: none !important; }
+    #RFD td { border-right: 0.5pt solid #3F3F3F !important; border-left: 0.5pt solid #3F3F3F !important; }
     .row {width: 1336px !important;}
     #outer-wrapper {max-width: unset !important;}
     </style>`); 

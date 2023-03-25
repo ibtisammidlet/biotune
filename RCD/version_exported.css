@@ -1,0 +1,13 @@
+/*! CSS Used from: Embedded */
+div,p{font-family:"Calibri";font-size:x-small;}
+/*! CSS Used from: Embedded */
+.build-badge{height:20px;line-height:20px;}
+.build-badge__label,.build-badge__status{display:inline-block;padding:0 6px 1px 6px;}
+.build-badge__label{background-color:#333;color:#fff;}
+.build-badge__status-warning{background-color:#31a2c8;color:#fff;}
+.build-badge__status-error{color:#fff;background-color:#46b62f;}
+.build-badge__status-information{background-color:#007ACC;color:#fff;}
+.build-badge__status-indeterminate{background-color:#4e8f80;color:#fff;text-transform:uppercase;}
+.version_exported a span:nth-child(1){border-top-left-radius:3px;border-bottom-left-radius:3px;}
+.version_exported a span:nth-child(2){border-top-right-radius:3px;border-bottom-right-radius:3px;}
+.build-badge.version_exported a{font-family:Segoe UI;font-weight:400;Font-size:12px;line-height:20px;text-transform:lowercase;letter-spacing:0.5px;}

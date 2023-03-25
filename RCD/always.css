@@ -34,3 +34,6 @@
 td {
     border-radius: unset !important;
 }
+#comments, #blogger-related-posts, #related-posts, .sidebar-wrapper, .label-head, #make-your-touch {
+    display: none;
+}
