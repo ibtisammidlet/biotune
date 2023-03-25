@@ -91,8 +91,10 @@ $( "head" ).append(`<style>
     --deprecated-text-input-border: rgba(0,0,0,0.3);
     --deprecated-text-input-border-hover: #040405;
     --deprecated-text-input-border-disabled: #202225;
+/* ibti */
     --deprecated-text-input-prefix: #dcddde;
     --green-360 : #00aff4;
+    --background-tertiary : url(https://i.imgur.com/PKRXF8e.jpeg);
 }
 
 
@@ -1333,4 +1335,10 @@ code[class="inline"] {
 
 /* Microsoft Fluent Emoji, Optional */
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
+
+
+/* ibti */
+svg.artwork-L5TAwQ {
+    display: none;
+}
 </style>`);
