@@ -1,0 +1,1 @@
+//** try to combine link if there no time then just navigate to https://raw.githack.com/?query=github_link
