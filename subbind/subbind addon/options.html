@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html>
-
+<link src="bulma.min.css" />
 <head>
     <meta charset="utf-8">
 </head>
 
 <body>
     <div class="outer-wrapper">
-        <div class="percentage-div">
-            <h4>set the percentage 1-100% that when the watched video reached it, then the video will be hidden:</h4>
-            default value is 1 which mean all videos that been watched even for a second will be hidden.<br>
-            <br>
-            <div class="separator">
-                <a imageanchor="1" href="images/setting configurable percentage.png"><img data-original-height="100" data-original-width="602" src="images/setting configurable percentage.png" border="0"></a></div>
-            <br>
-            <div class="new-percentage">
-                <input type="text">
-                <button class="addpercentage">save/change</button>
-                <div class="clearfix"></div>
+
+        <!-- https://codepen.io/flynch55/pen/BEyVKK -->
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        Christa Lowry
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z0__Vote" name="[0].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z0__Vote" name="[0].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-2">
+                        John Dalgity
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z1__Vote" name="[1].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z1__Vote" name="[1].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-2">
+                        Jan Maydan
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z2__Vote" name="[2].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z2__Vote" name="[2].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-2">
+                        Bev Holmes
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z3__Vote" name="[3].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z3__Vote" name="[3].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-2">
+                        Cynthia Guerard
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z4__Vote" name="[4].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z4__Vote" name="[4].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-2">
+                        Denzil Ferguson
+                    </td>
+                    <td class="col-md-6">
+                        <input style="margin-left: 5px" type="radio" value="1" checked="checked" data-val="true" data-val-required="The Vote field is required." id="z5__Vote" name="[5].Vote">
+                        <span style="margin-left: 2px">yes</span>
+                        <input style="margin-left: 5px" type="radio" value="0" id="z5__Vote" name="[5].Vote">
+                        <span style="margin-left: 2px">no</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="btn-group" role="group" aria-label="...">
+                    <input type="submit" value="Save" class="btn btn-success">
+                </div>
             </div>
         </div>
-        <div class="YouTube-ID-div">
-            <h4>set your YouTube ID:</h4>
-            setting your YouTube ID, will make the addon avoid hiding watched videos from your channel, including the playlists you have saved, this to be able to enjoy your favorite videos/songs.<br>
-            <br>
-            <div class="separator">
-                <a imageanchor="1" href="images/setting youtube id.png"><img data-original-height="100" data-original-width="602" src="images/setting youtube id.png" border="0"></a></div>
-            <br>
-            <div class="new-note">
-                <input type="text">
-                <button class="add">save/change</button>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-
-
-
-
-
         <div class="addon_as_depandacy">
             <h4>addon as depandacy:</h4>
-            <br>
             <a href="https://chrome.google.com/webstore/detail/search-by-image/cnojnbdhbhnkbcieeekonklommdnndci">search-by-image</a><br>
             <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb">shazam</a><br>
             <a href="https://chrome.google.com/webstore/detail/web-archives/hkligngkgcpcolhcnkgccglchdafcnao">web-archives</a><br>
             <a href="https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna">new-tab-redirect</a><br>
             <a href="./idle/KiwiSync.zip">KiwiSync</a><br>
-            <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">Allow CORS: Access-Control-Allow-Origin</a><br>
-            
+            <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related?hl=en">CORS Unblock</a> <a href="https://webbrowsertools.com/test-cors/">test</a><br>
         </div>
-
-
-
-
     </div>
+
     <script src="options.js"></script>
 </body>
 

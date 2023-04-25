@@ -267,3 +267,10 @@ browser.storage.local.get("SOA")
 .then(gotSOA, onError);
 
 }, 1500);
+
+
+
+/*
+direct link to MY MIX
+direct link to channels highest viewed videos
+*/

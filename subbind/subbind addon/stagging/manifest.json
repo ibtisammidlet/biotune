@@ -21,14 +21,7 @@
       "js": [ "./lib/bindingdb_rwd.js" ],
       "matches": [ "*://*.bindingdb.org/rwd/*" ],
       "run_at": "document_idle"
-   }, {
-      "js": [ "./lib/bio_tolerance.lib.js" ],
-      "matches": [ "*://*.discord.com/*" ],
-      "run_at": "document_idle"
    }
-
-
-
 
 
 ],
@@ -36,7 +29,6 @@
       "extension_page": "script-src 'self' 'sha256-Wh+Ic+nY0chHeD9MCat8cOhJJi7hApak7xGmpXVeIQE='; object-src 'self';"
    },
    "description": "clearer substance binding",
-   "host_permissions": [ "http://*/*", "https://*/*" ],
    "icons": {
       "128": "128.png",
       "16": "16.png",
@@ -46,7 +38,7 @@
    "manifest_version": 3,
    "minimum_chrome_version": "88",
    "name": "subbind",
-   "permissions": [ "contextMenus", "storage", "unlimitedStorage", "indexedDB" ],
+   "permissions": [ "contextMenus" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.9.8.23227"
    

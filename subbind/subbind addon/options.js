@@ -1,3 +1,4 @@
+/*
 var addBtn = document.querySelector('.add');
 var inputTitle = document.querySelector('.new-note input');
 
@@ -93,3 +94,13 @@ browser.storage.local.get("confperc")
 
 
 
+*/
+function doIt() {
+  var inputs = document.querySelectorAll('input[type="radio"]:checked');
+  var choices = "";
+  inputs.forEach(function(input) {
+    choices += input.value + "";
+  });
+  console.log(choices);
+}
+document.querySelector(".btn.btn-success").addEventListener("click", doIt);

@@ -1342,3 +1342,8 @@ svg.artwork-L5TAwQ {
     display: none;
 }
 </style>`);
+
+/* ideas
+emoji copycat
+$("[data-slate-string='true']").text($("[data-slate-string='true']").text()+ $(["[data-type='emoji'] img").src())
+*/
