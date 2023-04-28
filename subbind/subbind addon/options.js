@@ -1,3 +1,7 @@
+
+
+
+
 /*
 var addBtn = document.querySelector('.add');
 var inputTitle = document.querySelector('.new-note input');
@@ -95,12 +99,37 @@ browser.storage.local.get("confperc")
 
 
 */
-function doIt() {
+
+// Store an array of numbers
+let data = [] /** var outside **/
+
+
+async function doIt() {
   var inputs = document.querySelectorAll('input[type="radio"]:checked');
   var choices = "";
   inputs.forEach(function(input) {
     choices += input.value + "";
   });
-  console.log(choices);
+  data.push(choices);
 }
-document.querySelector(".btn.btn-success").addEventListener("click", doIt);
+
+
+const store = async (data) => { /** using the data **/
+chrome.storage.local.set({numbers: numbers}).then(() => {
+  console.log("Numbers are stored");
+});
+// Retrieve the array of numbers
+chrome.storage.local.get(["numbers"]).then((result) => {
+  console.log("Numbers are " + result.numbers);
+});
+}
+
+
+(async start() => { /** global async function **/
+	await doIt()  /** await the first function **/
+	store(data) /** calling second function n giving it the parama **/
+})()
+
+document.querySelector(".btn.btn-success").addEventListener("click", start);
+
+

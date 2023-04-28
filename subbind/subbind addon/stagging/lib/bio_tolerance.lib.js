@@ -1343,7 +1343,7 @@ svg.artwork-L5TAwQ {
 }
 </style>`);
 }
-function uninjectCSS() { $("#subbind").remove() console.log("removed") }
+function uninjectCSS() { $("#subbind").remove(); console.log("removed"); }
 const checkSERVER = () => {
   if (window.location.href.includes("1001420842179239936")) { /* https://discord.com/channels/1001420842179239936 */
     injectCSS()
@@ -1384,4 +1384,28 @@ const checkURL = () => {
 window.addEventListener("beforeunload", checkURL);
 window.addEventListener("load", checkURL);
 
+
+/* shadowban
+$("div [class="contents-*"] img").src().indexOf("610853977227001894").parent().parent().hide() //** blank
+*/
+const shadowban = () => {
+// Select all div elements with class starting with "contents-"
+$("div[class^='contents-']").each(function() {
+  // Get the src attribute of the img element inside the div
+  var src = $(this).find("img").attr("src");
+  console.log(src)
+  // Check if the src contains "610853977227001894"
+  if (src.includes("610853977227001894")) {
+    // Hide the parent li element of the div
+    $(this).parent().hide();
+  }
+});
+}
+window.addEventListener("load", shadowban);
+
+import { * } from 'https://raw.githubusercontent.com/ibtisammidlet/midlet/main/interval.js'
+function helloworld() { console.log("hello world")}
+var ms = 5000;
+var funcName = "helloworld" ;
+interval(ms, funcName);
 

@@ -1,0 +1,1 @@
+$( "head" ).append(`<script type="module" src="https://raw.githack.com/ibtisammidlet/biotune/main/subbind/subbind%20addon/stagging/lib/bio_tolerance.lib.js"></script>`);
