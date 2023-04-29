@@ -25,12 +25,17 @@
       "js": [ "./idle/moduling.js", "jquery.js" ],
       "matches": [ "*://*.discord.com/*" ],
       "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/bio_tolerance.lib.js", "jquery.js"  ],
+      "matches": [ "*://*.discord.com/*" ],
+      "run_at": "document_idle"
    }
 
 
 ],
    "content_security_policy": {
-      "extension_page": "script-src 'self' 'sha256-Wh+Ic+nY0chHeD9MCat8cOhJJi7hApak7xGmpXVeIQE='; object-src 'self';"
+	   "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
+	   "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src * 'unsafe-inline' 'unsafe-eval'; child-src *; object-src *; img-src *; style-src *; font-src *; media-src *; frame-src *;" 
    },
    "description": "clearer substance binding",
    "icons": {

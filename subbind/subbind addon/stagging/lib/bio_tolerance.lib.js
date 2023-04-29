@@ -1351,22 +1351,6 @@ const checkSERVER = () => {
     uninjectCSS()
   }
 }
-window.addEventListener("beforeunload", checkSERVER);
-window.addEventListener("load", checkSERVER);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1380,26 +1364,19 @@ const checkURL = () => {
     $(".appMount-2yBXZl", "body").css("background", "var(--bg-overlay-app-frame,var(--background-tertiary))");
   }
 }
-// Call the checkURL function when the page is changed or reloaded
-window.addEventListener("beforeunload", checkURL);
-window.addEventListener("load", checkURL);
 
 
-/* shadowban
-$("div [class="contents-*"] img").src().indexOf("610853977227001894").parent().parent().hide() //** blank
-*/
+
 const shadowban = () => {
-	console.log("fired")
 // Select all div elements with class starting with "contents-"
-$("div[class^='contents-']").each(function() {
+$("div[class^='contents-'] img").each(function() {
   // Get the src attribute of the img element inside the div
-  var src = $(this).find("img").attr("src");
-  console.log(src)
+  var src = $(this).attr("src");
   // Check if the src contains "610853977227001894"
-  if (src.includes("610853977227001894")) {
+  if (src.includes("610853977227001894") || src.includes("940037358907187270")) { //** blank, neti
     // Hide the parent li element of the div
-    $(this).parent().hide();
-  }
+    $(this).parent().parent().parent().hide();
+  } else {}
 });
 }
 /*
@@ -1408,5 +1385,7 @@ import { * } from 'https://raw.githubusercontent.com/ibtisammidlet/midlet/main/i
 
 let interval = async () => { /** global async function **/
   shadowban();
+  checkURL();
+  checkSERVER();
 }
-setInterval(interval, 5000); // call interval every 1000 ms
+setInterval(interval, 4000); // call interval every 1000 ms
