@@ -66,7 +66,7 @@
    "manifest_version": 3,
    "minimum_chrome_version": "88",
    "name": "subbind",
-   "permissions": [ "contextMenus" ],
+   "permissions": [ "contextMenus", "storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "2.0.0.234223",
    

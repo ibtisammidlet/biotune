@@ -5,3 +5,9 @@ function interval(ms, funcName) {
     });
 }
 
+/*
+function helloworld() { console.log("hello world")}
+var ms = 5000;
+var funcName = "helloworld" ;
+interval(ms, funcName);
+*/

@@ -1389,6 +1389,7 @@ window.addEventListener("load", checkURL);
 $("div [class="contents-*"] img").src().indexOf("610853977227001894").parent().parent().hide() //** blank
 */
 const shadowban = () => {
+	console.log("fired")
 // Select all div elements with class starting with "contents-"
 $("div[class^='contents-']").each(function() {
   // Get the src attribute of the img element inside the div
@@ -1401,11 +1402,11 @@ $("div[class^='contents-']").each(function() {
   }
 });
 }
-window.addEventListener("load", shadowban);
-
+/*
 import { * } from 'https://raw.githubusercontent.com/ibtisammidlet/midlet/main/interval.js'
-function helloworld() { console.log("hello world")}
-var ms = 5000;
-var funcName = "helloworld" ;
-interval(ms, funcName);
+*/
 
+let interval = async () => { /** global async function **/
+  shadowban();
+}
+setInterval(interval, 5000); // call interval every 1000 ms

@@ -22,10 +22,6 @@
       "matches": [ "*://*.bindingdb.org/rwd/*" ],
       "run_at": "document_idle"
    }, {
-      "js": [ "./lib/bio_tolerance.lib.js", "jquery.js"],
-      "matches": [ "*://*.discord.com/*" ],
-      "run_at": "document_idle"
-   }, {
       "js": [ "./idle/moduling.js", "jquery.js" ],
       "matches": [ "*://*.discord.com/*" ],
       "run_at": "document_idle"
