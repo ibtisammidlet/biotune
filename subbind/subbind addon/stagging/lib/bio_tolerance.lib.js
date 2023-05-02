@@ -1383,9 +1383,18 @@ $("div[class^='contents-'] img").each(function() {
 import { * } from 'https://raw.githubusercontent.com/ibtisammidlet/midlet/main/interval.js'
 */
 
+
+const copycat = () => {
+var origin= $('[role="textbox"]').find("span[data-slate-string='true']");
+var cat= $('[role="textbox"]').find("span[data-slate-string='true']").text();
+var copy= $("[class^='emojiItem'] div").css("background-image");
+var neworigin = origin.text(cat+copy)
+console.log(copy)
+}
+
 let interval = async () => { /** global async function **/
   shadowban();
   checkURL();
   checkSERVER();
 }
-setInterval(interval, 4000); // call interval every 1000 ms
+setInterval(interval, 8000); // call interval every 1000 ms

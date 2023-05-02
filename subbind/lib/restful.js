@@ -35,7 +35,7 @@ app.get('/', (req, res) => { // Handle incoming GET requests to http://localhost
 });
 
 /* Handle POST Requests */
-app.post('/user', (req, res) => { // Will run when there are any incoming POST requests to http://localhost:(port)/user. Note that a POST request is different from a GET request, so this won't exactly work when you actually visit http://localhost:(port)/user
+app.post('/subbind', (req, res) => { // Will run when there are any incoming POST requests to http://localhost:(port)/user. Note that a POST request is different from a GET request, so this won't exactly work when you actually visit http://localhost:(port)/user
     /* Create our Form Data */
     const data_1 = new URLSearchParams(); // Create a new formData object with the constructor
 
@@ -63,7 +63,7 @@ console.log(data_1)
 });
 
 app.listen(port, function () { // Configure the app to "listen" on the specified port.
-    console.log(`App listening! Link: http://localhost:${port}/`); // Log the fact our app is ready to the console.
+    console.log(`App listening! Link: http://localhost:${port}/subbind`); // Log the fact our app is ready to the console.
 });
 
 

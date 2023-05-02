@@ -271,8 +271,8 @@ $(document).on('click','#PTS', function(){
 	
     console.log(eduarray);
 $.ajax({
-        url: "http://localhost/subbind",
-        type: 'GET',
+        url: "http://localhost/subbind?code=",
+        type: 'POST',
 		data: JSON.stringify(eduarray),
         dataType: 'json', // added data type
         success: function(res) {
