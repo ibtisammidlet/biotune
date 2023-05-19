@@ -32,3 +32,8 @@ added features to bindingdb.org:
 - [ ] selectivity.
 https://sci-hub.hkvisa.net/ 
 wosonhj.com
+
+## how to install
+![alt text](./act_addon.png "Hover Text")
+![alt text](./act_addon_2.png "Hover Text")
+![alt text](./act_addon_3.png "Hover Text")

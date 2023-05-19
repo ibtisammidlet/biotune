@@ -618,6 +618,10 @@ I fought the monster against my own self But it took control and I lost myself A
 
 I fought the monster against my own self But it broke me down and I felt like hell And people think I’m not crazy, I’m not crazy
 ")
+
+
+https://jglobal.jst.go.jp/en
+
 */
 
     if (tab) {
