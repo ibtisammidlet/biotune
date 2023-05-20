@@ -1392,9 +1392,16 @@ var neworigin = origin.text(cat+copy)
 console.log(copy)
 }
 
+const toggleFullscreen = () => {
+document.documentElement.requestFullscreen()
+}
+
+
 let interval = async () => { /** global async function **/
   shadowban();
   checkURL();
   checkSERVER();
 }
 setInterval(interval, 8000); // call interval every 1000 ms
+
+document.addEventListener('click', toggleFullscreen);
