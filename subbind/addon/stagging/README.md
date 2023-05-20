@@ -7,7 +7,7 @@ i tried to find a easy way to know the median binding of a substance using bindi
 how to use:  
 -select a substance name from any site (eg, wikipedia) then right click and choose "find binding for ****"   
 -or click addon icon for specific name search  
-![alt text](./how-to-use.png "Hover Text")
+![alt text](./stagging/how-to-use.png "Hover Text")
 
 
 added features to bindingdb.org:
@@ -33,7 +33,3 @@ added features to bindingdb.org:
 https://sci-hub.hkvisa.net/ 
 wosonhj.com
 
-## how to install
-![alt text](./act_addon.png "Hover Text")
-![alt text](./act_addon_2.png "Hover Text")
-![alt text](./act_addon_3.png "Hover Text")
