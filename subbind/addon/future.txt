@@ -1,7 +1,0 @@
--convert sientific numbers to normal
--remove additions text keep nM
--setting efficacy
--delete non human study if human study is available for specific receptor
--add efficacy in ki from IC/EC50
--deleting other value if ki available
--table sorting

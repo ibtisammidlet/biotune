@@ -1396,6 +1396,21 @@ const toggleFullscreen = () => {
 document.documentElement.requestFullscreen()
 }
 
+const PWA = () => {
+$( "head" ).append(`<link rel="manifest" href="/idle/manifest.json">
+<script>if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/idle/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered: ', registration);
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed: ', error);
+      });
+  });
+}</script>`);
+}PWA();
+// https://developer.chrome.com/docs/workbox/reference/workbox-build/#method-generateSW
 
 let interval = async () => { /** global async function **/
   shadowban();

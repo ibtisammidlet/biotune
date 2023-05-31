@@ -621,7 +621,6 @@ I fought the monster against my own self But it broke me down and I felt like he
 
 
 https://jglobal.jst.go.jp/en
-
 */
 
     if (tab) {
