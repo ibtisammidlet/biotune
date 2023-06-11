@@ -430,12 +430,12 @@ coding
 https://github.com/search?q=care
 https://gitlab.com/search?search=care&nav_source=navbar
 buying:
-https://wholisticresearch.com/shop/
-https://pglchem.com/?s=Bromantane&post_type=product&type_aws=true
-https://nootropicsfrontline.com/?s=NSI
+https://wholisticresearch.com/shop/ [trust=bookmark/rare-nootropic-store]
+https://pglchem.com/?s=Bromantane&post_type=product&type_aws=true [trust=bookmark/rare-nootropic-store]
+https://nootropicsfrontline.com/?s=NSI [trust=bookmark/rare-nootropic-store]
 https://russianmeds.com/index.php?route=product/search&search=Sulbutiamine
-https://everychem.com/?s=Bromantane
-https://www.alphagresearch.com/search-results?q=Tesemorelin
+https://everychem.com/?s=Bromantane [trust=sirsad-own]
+https://www.alphagresearch.com/search-results?q=Tesemorelin  [trust=bookmark/noot3.0]
 
 v1.9.7+
 https://dezgo.com/ anything 3.0 (anime)
