@@ -1,4 +1,4 @@
-function injectCSS() {
+function injectCSS() { console.log("injected")
 $( "head" ).append(`<style id="subbind">
 /**
 * @name vividant
@@ -1344,13 +1344,11 @@ svg.artwork-L5TAwQ {
 </style>`);
 }
 function uninjectCSS() { $("#subbind").remove(); console.log("removed"); }
+
 const checkSERVER = () => {
-  if (window.location.href.includes("1001420842179239936")) { /* https://discord.com/channels/1001420842179239936 */
-    injectCSS()
-  } else {
-    uninjectCSS()
-  }
-}
+  let isDone = false;
+  window.location.href.includes("1001420842179239936") ? /* true */(!isDone && injectCSS(), isDone = true) : /* else */ (isDone && uninjectCSS(), isDone = false);
+};
 
 
 
@@ -1379,6 +1377,7 @@ $("div[class^='contents-'] img").each(function() {
   } else {}
 });
 }
+
 /*
 import { * } from 'https://raw.githubusercontent.com/ibtisammidlet/midlet/main/interval.js'
 */
@@ -1391,11 +1390,12 @@ var copy= $("[class^='emojiItem'] div").css("background-image");
 var neworigin = origin.text(cat+copy)
 console.log(copy)
 }
-
+/*
 const toggleFullscreen = () => {
 document.documentElement.requestFullscreen()
 }
-
+*/
+/*
 const PWA = () => {
 $( "head" ).append(`<link rel="manifest" href="/idle/manifest.json">
 <script>if ('serviceWorker' in navigator) {
@@ -1410,10 +1410,10 @@ $( "head" ).append(`<link rel="manifest" href="/idle/manifest.json">
   });
 }</script>`);
 }PWA();
-// https://developer.chrome.com/docs/workbox/reference/workbox-build/#method-generateSW
+ https://developer.chrome.com/docs/workbox/reference/workbox-build/#method-generateSW */
 
 let interval = async () => { /** global async function **/
-  shadowban();
+/*  shadowban(); */
   checkURL();
   checkSERVER();
 }

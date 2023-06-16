@@ -156,6 +156,20 @@ select.searchDropdown {
     width: 40%;
     font-size: 15px;
 }
+
+  .textArea {
+    /* Additional styles for the text area */
+    width: 100%;
+    height: 200px;
+    border: 3px solid #00B4CC;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    resize: vertical;
+    outline: none;
+    color: #9DBFAF;
+  }
+
   </style>
 
 <body>
@@ -243,12 +257,16 @@ select.searchDropdown {
             <select class="searchDropdown" name="searchOption">
                 <option value="substance">substance</option>
                 <option value="receptor">receptor</option>
+                <option value="text-box">text box</option>
+				<option value="textarea">Text Area</option>
             </select>
             <button class="searchButton" onclick="search()" type="submit">
                 <i class="fa fa-search"></i>
             </button>
             <datalist id="suggestions"></datalist>
         </form>
+		      <option value="textarea">Text Area</option>
+
     </div>
     <script>
     function search() {
@@ -273,6 +291,25 @@ select.searchDropdown {
         document.body.appendChild(script);
         script.onload = (e) => script.remove();
     }
+	
+    //** text-box
+    // Get the elements
+    const searchTermInput = document.querySelector('.searchTerm');
+    const searchDropdown = document.querySelector('.searchDropdown');
+    const textArea = document.querySelector('.textArea');
+
+    // Add event listener to the dropdown
+    searchDropdown.addEventListener('change', function () {
+      if (this.value === 'textarea') {
+        textArea.value = searchTermInput.value;
+        textArea.style.display = 'block';
+        searchTermInput.style.display = 'none';
+      } else {
+        searchTermInput.value = textArea.value;
+        textArea.style.display = 'none';
+        searchTermInput.style.display = 'block';
+      }
+    });
     </script>
 </body>
 <div style="padding-left: 15px;">get the <u><a href="https://chrome.google.com/webstore/detail/subbind/hdlnkhfddbapfdllojdhlepocncbckkp" rel="nofollow" target="_blank">addon</a></u> first!</div>
