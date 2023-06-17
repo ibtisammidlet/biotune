@@ -257,7 +257,6 @@ select.searchDropdown {
             <select class="searchDropdown" name="searchOption">
                 <option value="substance">substance</option>
                 <option value="receptor">receptor</option>
-                <option value="text-box">text box</option>
 				<option value="textarea">Text Area</option>
             </select>
             <button class="searchButton" onclick="search()" type="submit">
@@ -265,7 +264,7 @@ select.searchDropdown {
             </button>
             <datalist id="suggestions"></datalist>
         </form>
-		      <option value="textarea">Text Area</option>
+  <textarea class="textArea"></textarea>
 
     </div>
     <script>
@@ -301,10 +300,12 @@ select.searchDropdown {
     // Add event listener to the dropdown
     searchDropdown.addEventListener('change', function () {
       if (this.value === 'textarea') {
+		  console.log("option changed")
         textArea.value = searchTermInput.value;
         textArea.style.display = 'block';
         searchTermInput.style.display = 'none';
       } else {
+		  console.log("else")
         searchTermInput.value = textArea.value;
         textArea.style.display = 'none';
         searchTermInput.style.display = 'block';
