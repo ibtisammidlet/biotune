@@ -292,19 +292,14 @@ select.searchDropdown {
     }
 	
     //** text-box
-    // Get the elements
-    const searchTermInput = document.querySelector('.searchTerm');
-    const searchDropdown = document.querySelector('.searchDropdown');
-    const textArea = document.querySelector('.textArea');
-
-    // Add event listener to the dropdown
-    searchDropdown.addEventListener('change', function () {
+    $('.searchDropdown').addEventListener('change', function () {
       if (this.value === 'textarea') {
 $( "head" ).append(`<style id="subbind">
 .textArea {
     display: unset !important;
 }
 </style>`);
+ console.log("d");
       } else {
 
 
