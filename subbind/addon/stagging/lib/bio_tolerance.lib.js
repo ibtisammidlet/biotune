@@ -1,4 +1,4 @@
-function injectCSS() { console.log("injected")
+function injectCSS() { 
 $( "head" ).append(`<style id="subbind">
 /**
 * @name vividant
@@ -1343,10 +1343,10 @@ svg.artwork-L5TAwQ {
 }
 </style>`);
 }
-function uninjectCSS() { $("#subbind").remove(); console.log("removed"); }
+function uninjectCSS() { $("#subbind").remove() }
 
+let isDone = false;
 const checkSERVER = () => {
-  let isDone = false;
   window.location.href.includes("1001420842179239936") ? /* true */(!isDone && injectCSS(), isDone = true) : /* else */ (isDone && uninjectCSS(), isDone = false);
 };
 
@@ -1412,11 +1412,12 @@ $( "head" ).append(`<link rel="manifest" href="/idle/manifest.json">
 }PWA();
  https://developer.chrome.com/docs/workbox/reference/workbox-build/#method-generateSW */
 
+
+
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
-  checkURL();
-  checkSERVER();
+ checkSERVER(); 
 }
 setInterval(interval, 8000); // call interval every 1000 ms
-
+checkURL();
 document.addEventListener('click', toggleFullscreen);

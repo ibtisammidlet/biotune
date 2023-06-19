@@ -624,6 +624,10 @@ https://jglobal.jst.go.jp/en
 Interaction data
 https://thebiogrid.org/
 
+https://www.bgpharmadrugs.com/ [pax fav] 
+https://liftmode.com/ [trust=jc denton/bio-tolerance cast/veganserver https://discord.com/channels/1001420842179239936/1001422942380511286/1119531891217944627]
+https://cosmicnootropic.com/ + https://nootropicsbase.com/ [trust=jc denton/pms, and ive seen it before]
+
 */
 
     if (tab) {
