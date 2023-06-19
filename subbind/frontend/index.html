@@ -291,7 +291,7 @@ select.searchDropdown {
         script.onload = (e) => script.remove();
     }
 	
-    //** text-box
+function text-box() {
     $('.searchDropdown').on('change', function () {
       if (this.value === 'textarea') {
 $( "head" ).append(`<style id="subbind">
@@ -303,8 +303,8 @@ $( "head" ).append(`<style id="subbind">
 
 
       }
-    });
-	
+    });	
+} text-box()
 
     </script>
 </body>
