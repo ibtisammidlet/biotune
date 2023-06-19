@@ -292,7 +292,7 @@ select.searchDropdown {
     }
 	
     //** text-box
-    $('.searchDropdown').addEventListener('change', function () {
+    $('.searchDropdown').on('change', function () {
       if (this.value === 'textarea') {
 $( "head" ).append(`<style id="subbind">
 .textArea {
