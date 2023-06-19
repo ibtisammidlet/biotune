@@ -300,10 +300,11 @@ select.searchDropdown {
     // Add event listener to the dropdown
     searchDropdown.addEventListener('change', function () {
       if (this.value === 'textarea') {
-	  .textArea {
+$( "head" ).append(`<style id="subbind">
+.textArea {
     display: unset !important;
 }
-	  
+</style>`);
       } else {
 
 
