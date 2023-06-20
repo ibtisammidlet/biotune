@@ -272,8 +272,9 @@ select.searchDropdown {
         event.preventDefault()
         window.open('https://www.bindingdb.org/rwd/bind/AdvancedSearch.jsp?' + 'sources=0&sources=1&sources=2&sources=3&sources=4&sources=5&sources=6&criteria=&choices=compound_name:0:0:0&cn_name:0=exact&cn_text:0=' + $('.searchTerm').val(), "_blank")
     }
-	
-function initializePage() { //https://chat.openai.com/c/40ad1c2d-0487-47c8-9df6-451ec0f3fbff
+
+const main = () => {
+
     //** Google search suggestions
     const input = document.getElementById('input'),
         suggestions = document.getElementById('suggestions');
@@ -304,8 +305,14 @@ $( "head" ).append(`<style id="subbind">
 
       }
     });	
-} 
-    </script>
+}
+	
+	
+let interval = async () => { /** global async function **/
+ main(); 
+}
+setInterval(interval, 8000); // call interval every 1000 ms
+</script>
 </body>
 <div style="padding-left: 15px;">get the <u><a href="https://chrome.google.com/webstore/detail/subbind/hdlnkhfddbapfdllojdhlepocncbckkp" rel="nofollow" target="_blank">addon</a></u> first!</div>
 
