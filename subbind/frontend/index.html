@@ -267,54 +267,6 @@ select.searchDropdown {
         </form>
 
     </div>
-    <script>
-    function search() {
-        event.preventDefault()
-        window.open('https://www.bindingdb.org/rwd/bind/AdvancedSearch.jsp?' + 'sources=0&sources=1&sources=2&sources=3&sources=4&sources=5&sources=6&criteria=&choices=compound_name:0:0:0&cn_name:0=exact&cn_text:0=' + $('.searchTerm').val(), "_blank")
-    }
-
-
-function main(){
-    // element is loaded.. do stuff
-    //** Google search suggestions
-    const input = document.getElementById('input'),
-        suggestions = document.getElementById('suggestions');
-
-    input.onkeyup = GetSuggestions;
-
-    function handleData(data) {
-        suggestions.innerHTML = '';
-        data[1].forEach(term => suggestions.insertAdjacentHTML('beforeend', `<option>${term}</option>`));
-    }
-
-    function GetSuggestions(e) {
-        let script = document.createElement('script');
-        script.src = `https://suggestqueries.google.com/complete/search?output=chrome&q=${e.target.value}&callback=handleData`;
-        document.body.appendChild(script);
-        script.onload = (e) => script.remove();
-    }
-	
-    $('.searchDropdown').on('change', function () {
-      if (this.value == 'textarea') {
-$( "head" ).append(`<style id="subbind">
-.textArea {
-    display: unset !important;
-}
-</style>`);
-      } else {
-
-
-      }
-    });	
-};
-
-	
-	
-let Timeout = async () => { 
- main(); 
-}
-setTimeout(Timeout, 8000);
-</script>
 </body>
 <div style="padding-left: 15px;">get the <u><a href="https://chrome.google.com/webstore/detail/subbind/hdlnkhfddbapfdllojdhlepocncbckkp" rel="nofollow" target="_blank">addon</a></u> first!</div>
 
