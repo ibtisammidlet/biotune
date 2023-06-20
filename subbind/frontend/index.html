@@ -274,6 +274,8 @@ select.searchDropdown {
     }
 
 
+function main(){
+    // element is loaded.. do stuff
     //** Google search suggestions
     const input = document.getElementById('input'),
         suggestions = document.getElementById('suggestions');
@@ -304,15 +306,14 @@ $( "head" ).append(`<style id="subbind">
 
       }
     });	
+};
 
 	
 	
-/*
-let interval = async () => { 
+let Timeout = async () => { 
  main(); 
 }
-setInterval(interval, 8000);
-*/
+setTimeout(Timeout, 8000);
 </script>
 </body>
 <div style="padding-left: 15px;">get the <u><a href="https://chrome.google.com/webstore/detail/subbind/hdlnkhfddbapfdllojdhlepocncbckkp" rel="nofollow" target="_blank">addon</a></u> first!</div>
