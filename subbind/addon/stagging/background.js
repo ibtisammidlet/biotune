@@ -394,8 +394,62 @@ chrome.contextMenus.create({
   "contexts" : ["all"],
   "parentId": "v1.9.9+"
 });
-
-
+chrome.contextMenus.create({
+  "id":"thebiogrid",
+  "title" : "find binding for %s in BioGRID",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+});
+/*chrome.contextMenus.create({
+  "id":"1000nm",
+  "title" : "from those who have >1000nm ki/IC50/EC50 to %receptor% : %SubstancesList% [AI]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+}); */
+chrome.contextMenus.create({
+  "id":"msdark",
+  "title" : "go to msdark [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.9+"
+});
+chrome.contextMenus.create({
+  "id":"jglobal",
+  "title" : "search in jglobal [JP]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+});
+chrome.contextMenus.create({
+  "id":"bgpharma",
+  "title" : "search in bgpharma for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+});
+chrome.contextMenus.create({
+  "id":"liftmode",
+  "title" : "search in liftmode for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+});
+chrome.contextMenus.create({
+  "id":"cosmicnootropic",
+  "title" : "go to cosmicnootropic [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v1.9.9+"
+});
+chrome.contextMenus.create({
+  "id":"nootropicsbase",
+  "title" : "search in nootropicsbase for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v1.9.9+"
+});
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -457,7 +511,7 @@ https://novelai.net/stories start from scratch
 v1.9.8+
 https://namu.wiki/Search?q=care
 https://www.magpharm.com/index.php?page=products&pages=0&keyword=care
-https://www.alldaychemist.com/catalogsearch/result/?q=care
+https://www.alldaychemist.com/catalogsearch/result/?q=care [trusted by=someone in reddit]
 https://you.com/search?q=give+me+30+random+hashtag+for+Instagram+about+%22care%22&fromSearchBar=true&tbm=youchat
 https://www.jsdelivr.com/github
 https://www.jsdelivr.com/tools/purge
@@ -591,13 +645,30 @@ Hassan don't follow:
 https://instagram.com/8528.sami?igshid=YmMyMTA2M2Y=
 
 insta end //
-https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters
-https://m.facebook.com/buddylist.php
+https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters [implemented]
+https://m.facebook.com/buddylist.php [implemented]
+
+###############################################################################################################################################################
+##### EXCELED          #####        trusted by                                       free int shipping for over (usd)    int shipping price(usd)    accept btc#
+pharmshopworld.com                  http://levekunst.com/blogs/wp/ibogaine.php                                                                                #
+chemical-collective.com             https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543427                                                #
+https://neev-labs.com/              https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
+https://www.smokeyschemsite.com/    https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
+nootropicsource.com                 nootropicsindex.com                              150                                                            yes       #
+nootropicsdepot.com                                                                                                                                           #
+www.nootroponaut.com                                                                 200                                                                      #
+www.biohackerslab.com                                                                                                    9,95                                 #
+www.brainzyme.com                                                                    52.12                               pre-backaged supplement              #
+#info: you migh not able to buy drugs in algeria due to it's stringent import regulations                                                                     #
+>>https://modafinil.org/buy-modafinil-bitcoin/                                                                                                                #
+you can use reshipping service from 🇬🇧 the UK such as Skypax to try to avoid stringent customs                                                                 #
+>>https://modafinilxl.com/shipping/                                                                                                                           #
+###############################################################################################################################################################
 
 
 https://www.facebook.com/marketplace/category/search?query=
 https://www.aatbio.com/search?query=ht2a%20 (resources)
-https://www.msdark.com/search?options%5Bprefix%5D=none&options%5Bunavailable_products%5D=last&page=4&q=top%2A&type=product (dz)
+https://www.msdark.com/search?options%5Bprefix%5D=none&options%5Bunavailable_products%5D=last&page=4&q=top%2A&type=product (dz) [implemented]
 
 ##################
 ## song writing ##
@@ -620,14 +691,18 @@ I fought the monster against my own self But it broke me down and I felt like he
 ")
 
 
-https://jglobal.jst.go.jp/en
+https://jglobal.jst.go.jp/en [implemented]
 Interaction data
-https://thebiogrid.org/
+https://thebiogrid.org/chemsearch.php?chemSearch=modafinil  [implemented]
 
-https://www.bgpharmadrugs.com/ [pax fav] 
-https://liftmode.com/ [trust=jc denton/bio-tolerance cast/veganserver https://discord.com/channels/1001420842179239936/1001422942380511286/1119531891217944627]
-https://cosmicnootropic.com/ + https://nootropicsbase.com/ [trust=jc denton/pms, and ive seen it before]
+https://www.bgpharmadrugs.com/?s=modafinil&post_type=product [pax fav] 
+https://liftmode.com/search-page/?search=kanna [trust=jc denton/bio-tolerance cast/veganserver https://discord.com/channels/1001420842179239936/1001422942380511286/1119531891217944627]
+https://cosmicnootropic.com/product-category/all/?orderby=price&product_count=-1&product_view=grid + https://nootropicsbase.com/?s=modafinil [trust=jc denton/pms, and ive seen it before edit1:free int shipping for over (usd)=150]
 
+https://scholar.kyobobook.co.kr/article/detail/4010024529153 [korean scholarship found by vegan/biohax]
+https://synapse.koreamed.org/articles/1019870  [other korean scholarship found by vegan/biohax]
+https://vocaroo.com/ the online voice recorder
+https://naturesway.com/products/ginkgold?variant=43405110935766  [trust=netizenne/veganserver(https://discord.com/channels/1011367020182376478/1011367021293879369/1124220523275096066)==> https://www.reddit.com/r/Nootropics/comments/10sednv/comment/j72wjjz/?utm_source=share&utm_medium=web2x&context=3 ++ me asking=https://discord.com/channels/1001420842179239936/1001422942380511286/1124358852574453780 got= Yeah, natures way products are good. Not the best but not bad either.]
 */
 
     if (tab) {
@@ -797,18 +872,36 @@ https://cosmicnootropic.com/ + https://nootropicsbase.com/ [trust=jc denton/pms,
 
 
 
+        /* if (info.menuItemId === "1000nm"){
+      chrome.tabs.create({url: 'https://you.com/search?q=give me from those substances who have 1000nm ki, IC50 , EC50 and potent to '+info.selectionText[of receptor]+' : '+info.selectionText[of SubstancesList]+'&tbm=youchat&cfr=chat'});
+        } */
+        if (info.menuItemId === "msdark"){
+      chrome.tabs.create({url: 'https://www.msdark.com/search?options%5Bprefix%5D=none&options%5Bunavailable_products%5D=last&page=1&q=top%2A&type=product'+'?utm_medium=cpc&utm_source=subbind'});
+        }
         if (info.menuItemId === "atlas-filters"){
       chrome.tabs.create({url: 'https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters'});
         }
         if (info.menuItemId === "buddylist"){
       chrome.tabs.create({url: 'https://m.facebook.com/buddylist.php'});
         }
-
-
-
-
-
-
+       if (info.menuItemId === "jglobal"){
+      chrome.tabs.create({url: 'https://jglobal.jst.go.jp/en/search/anythings#%7B%22category%22%3A%220%22%2C%22keyword%22%3A%22'+info.selectionText+'%22%7D'});
+        }
+        if (info.menuItemId === "thebiogrid"){
+      chrome.tabs.create({url: 'https://thebiogrid.org/chemsearch.php?chemSearch='+info.selectionText});
+        }
+        if (info.menuItemId === "bgpharma"){
+      chrome.tabs.create({url: 'https://www.bgpharmadrugs.com/?s='+info.selectionText+'&post_type=product&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "liftmode"){
+      chrome.tabs.create({url: 'https://liftmode.com/search-page/?search='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "cosmicnootropic"){
+      chrome.tabs.create({url: 'https://cosmicnootropic.com/product-category/all/?orderby=price&product_count=-1&product_view=grid'+'?utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "nootropicsbase"){
+      chrome.tabs.create({url: 'https://nootropicsbase.com/?s='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
 
 
 

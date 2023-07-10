@@ -1341,6 +1341,20 @@ code[class="inline"] {
 svg.artwork-L5TAwQ {
     display: none;
 }
+ .markup-eYLPri a span {
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    font-family: var(--font-display);
+	border-radius: 6px;
+    padding-left: 5px;
+}
+.markup-eYLPri a span:hover {
+    color: var(--white-500);
+    background-color: var(--brand-experiment);
+	text-decoration: underline;
+}
 </style>`);
 }
 function uninjectCSS() { $("#subbind").remove() }
@@ -1412,7 +1426,13 @@ $( "head" ).append(`<link rel="manifest" href="/idle/manifest.json">
 }PWA();
  https://developer.chrome.com/docs/workbox/reference/workbox-build/#method-generateSW */
 
-
+//** channel muter for next hidding
+const mute = () => {
+/*	http rquset should do this
+/api/v9/users/@me/guilds/1011367020182376478/settings
+  "body": {"channel_overrides":{"1096787455933419632":{"muted":true,"mute_config":{"selected_time_window":-1,"end_time":null}}}}
+*/
+}
 
 let interval = async () => { /** global async function **/
 /*  shadowban(); */

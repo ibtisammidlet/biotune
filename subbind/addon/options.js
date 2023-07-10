@@ -3,104 +3,6 @@
 
 
 
-/*
-var addBtn = document.querySelector('.add');
-var inputTitle = document.querySelector('.new-note input');
-
-
-addBtn.addEventListener('click', check);
-function check() {
-if (inputTitle.value != "") {
-addNote();
-}else{
-let youtubeid = {
-  name: ""
-}
-
-// store the objects
-browser.storage.local.set({youtubeid})
-  .then(youtubeiddeleted, onError);
-  function youtubeiddeleted() {
-alert("youtube ID deleted");
-  };
-  function onError(error) {
-  console.log(error)
-}
-};
-}
-
-function addNote() {
-function setItem() {
-  console.log("youtube ID saved");
-}
-
-function gotyoutubeid(item) {
-  alert("your saved id is: "+`${item.youtubeid.name}`);
-}
-
-function onError(error) {
-  console.log(error)
-}
-
-// define 2 objects
-
-let youtubeid = {
-  name: inputTitle.value
-}
-
-// store the objects
-browser.storage.local.set({youtubeid})
-  .then(setItem, onError);
-
-browser.storage.local.get("youtubeid")
-  .then(gotyoutubeid, onError);
-
-}
-
-
-
-
-
-
-
-
-
-var addBtnpercentage = document.querySelector('.addpercentage');
-var inputTitlepercentage = document.querySelector('.new-percentage input');
-
-addBtnpercentage.addEventListener('click', setperc);
-function setperc() {
-	
-function setlogconfperc() {
-  console.log("confperc saved");
-}
-function gotconfperc(item) {
-  alert("videos watched equal or more then "+`${item.confperc.value}`+ " will be hidden");
-}
-
-function onError(error) {
-  console.log(error)
-}
-
-// define 2 objects
-
-let confperc = {
-  value: inputTitlepercentage.value
-}
-
-// store the objects
-browser.storage.local.set({confperc})
-  .then(setlogconfperc, onError);
-
-browser.storage.local.get("confperc")
-  .then(gotconfperc, onError);
-
-}
-
-
-
-*/
-
 // Store an array of numbers
 let data = [] /** var outside **/
 
@@ -118,16 +20,21 @@ async function doIt() {
 
 
 const store = async (data) => { /** using the data **/
-chrome.storage.local.set({binary: data}).then(() => {
-chrome.storage.local.get(["binary"]).then((result) => {
-  console.log("binary are " + result.binary);
-});
-});
+chrome.storage.local.set({ binary: data });
+  chrome.storage.local.get("binary", (result) => {
+    console.log("changed to " + result.binary);
+  });
 }
+
+window.onload = function() {
+  chrome.storage.local.get(["binary"], (result) => {
+    console.log(" original value is " + result.binary);
+  });
+};
 
 let interval = async () => { /** global async function **/
 	await doIt()  /** await the first function **/
-	store(data) /** calling second function n giving it the parama **/
+    store(data)  /** calling second function n giving it the parama **/
 }
 setInterval(interval, 1000); // call interval every 1000 ms
 

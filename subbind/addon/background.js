@@ -586,29 +586,6 @@ https://atlas.bot/guilds/1001420842179239936/plugins/moderation/filters
 https://m.facebook.com/buddylist.php
 
 
-                                    trusted by                                                                   accept btc
-pharmshopworld.com                  http://levekunst.com/blogs/wp/ibogaine.php
-chemical-collective.com             https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543427
-https://neev-labs.com/              https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452
-https://www.smokeyschemsite.com/    https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452
-nootropicsource.com                 nootropicsindex.com                                                          yes
-https://www.alldaychemist.com/      someone in reddit 
-
-
-                                    free int shipping for over (usd)                  int shipping price(usd)     
-nootropicsdepot.com           
-www.nootroponaut.com                200       
-nootropicsource.com                 150       
-cosmicnootropic.com                 150       
-          
-www.biohackerslab.com                                                                 9,95      
-www.brainzyme.com                   52.12                                             pre-backaged supplement
-#info: you migh not able to buy drugs in algeria due to it's stringent import regulations
->>https://modafinil.org/buy-modafinil-bitcoin/
-you can use reshipping service from 🇬🇧 the UK such as Skypax to try to avoid stringent customs 
->>https://modafinilxl.com/shipping/
-##
-
 
 */
 
@@ -798,5 +775,74 @@ you can use reshipping service from 🇬🇧 the UK such as Skypax to try to avo
 
 
 
+/* option.js>>background indexeddb++
+// Background script code
+let db;
 
+// Open or create the IndexedDB database
+const openDatabase = () => {
+  const request = indexedDB.open("myDatabase", 1);
 
+  request.onerror = (event) => {
+    console.log("Failed to open database:", event.target.error);
+  };
+
+  request.onsuccess = (event) => {
+    db = event.target.result;
+    console.log("Database opened successfully.");
+  };
+
+  request.onupgradeneeded = (event) => {
+    const database = event.target.result;
+    database.createObjectStore("myData", { keyPath: "id", autoIncrement: true });
+  };
+};
+
+// Store the data in IndexedDB
+const storeData = (data) => {
+  const transaction = db.transaction(["myData"], "readwrite");
+  const objectStore = transaction.objectStore("myData");
+
+  const newData = { value: data };
+
+  const request = objectStore.add(newData);
+
+  request.onsuccess = () => {
+    console.log("Data stored in IndexedDB.");
+  };
+
+  request.onerror = (event) => {
+    console.log("Failed to store data:", event.target.error);
+  };
+};
+
+// Retrieve the stored data from IndexedDB
+const retrieveData = () => {
+  const transaction = db.transaction(["myData"], "readonly");
+  const objectStore = transaction.objectStore("myData");
+
+  const request = objectStore.getAll();
+
+  request.onsuccess = (event) => {
+    const data = event.target.result;
+    console.log("Retrieved data from IndexedDB:", data);
+  };
+
+  request.onerror = (event) => {
+    console.log("Failed to retrieve data:", event.target.error);
+  };
+};
+
+// Open the IndexedDB database on extension startup
+openDatabase();
+
+// Message listener for storing and retrieving data
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === "storeData") {
+    const inputData = request.data;
+    storeData(inputData);
+  } else if (request.action === "retrieveData") {
+    retrieveData();
+  }
+});
+*/
