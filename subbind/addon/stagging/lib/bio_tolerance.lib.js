@@ -1434,9 +1434,25 @@ const mute = () => {
 */
 }
 
+//** replay videos
+const replayer = () => {
+	            $('[aria-label="Play again"]').click();
+/* v2
+        if ($('[aria-label="Play"]').offsetParent !== null && $('[aria-label="Pause"]') === null) {
+            $('[aria-label="Play"]').click();
+			$('[aria-label="Play again"]').click();
+		} else {
+			$('[aria-label="Pause"]').click();
+		}
+*/
+}
+
+
+
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
  checkSERVER(); 
+  replayer(); 
 }
 setInterval(interval, 8000); // call interval every 1000 ms
 checkURL();
