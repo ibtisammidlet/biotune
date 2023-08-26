@@ -1,0 +1,26 @@
+{
+  "name": "@autoext/crx-packer",
+  "version": "2.0.1",
+  "description": "crx 本地打包工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/pack.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:autoext/crx-packer.git"
+  },
+  "keywords": [
+    "crx",
+    "chrome extension",
+    "pack"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "g8up",
+  "license": "ISC",
+  "dependencies": {
+    "crx": "^5.0.0"
+  }
+}

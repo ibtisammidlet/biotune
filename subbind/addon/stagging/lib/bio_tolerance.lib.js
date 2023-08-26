@@ -1447,12 +1447,19 @@ const replayer = () => {
 */
 }
 
+//** cooler color
+const cooler = () => { 
+const body = document.body;
+  body.style.filter = `hue-rotate(8deg)`;
+}
+
 
 
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
  checkSERVER(); 
   replayer(); 
+  cooler(); 
 }
 setInterval(interval, 8000); // call interval every 1000 ms
 checkURL();

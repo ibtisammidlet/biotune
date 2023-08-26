@@ -29,6 +29,14 @@
       "js": [ "./lib/bio_tolerance.lib.js", "jquery.js"  ],
       "matches": [ "*://*.discord.com/*" ],
       "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/YWVH.lib.js", "jquery.js"  ],
+      "matches": [ "*://*.youtube.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/instagram-dl.user.js", "jquery.js"  ],
+      "matches": [ "*://*.instagram.com/*" ],
+      "run_at": "document_idle"
    }
 
 
