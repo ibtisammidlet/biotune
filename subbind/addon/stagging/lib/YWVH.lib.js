@@ -421,7 +421,7 @@ if (playlisttxtcntnt.length < "15") {
 //** checking perc then hide
 $( "#overlays.ytd-thumbnail #progress" ).each(function (index) {
 var progressfullvl = $(this).attr('style').replace('width: ','').replace('%;',''); 
-if (parseInt(progressfullvl) >= /** `${item.confperc.value}` **/ "20") {$(this).parent().parent().parent().parent().parent().parent().parent().parent().hide();}
+if (parseInt(progressfullvl) >= /** `${item.confperc.value}` **/ "20") {/** $(this).parent().parent().parent().parent().parent().parent().parent().parent().hide(); **/}
 })	
 
 } else {

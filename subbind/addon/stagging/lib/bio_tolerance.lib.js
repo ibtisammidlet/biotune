@@ -1355,6 +1355,11 @@ svg.artwork-L5TAwQ {
     background-color: var(--brand-experiment);
 	text-decoration: underline;
 }
+
+/* cursor https://8kun.top/fringe/res/117496.html */
+html, *, hover {
+    cursor: url(https://i.imgur.com/vyaLY2f.png), default !important;
+}
 </style>`);
 }
 function uninjectCSS() { $("#subbind").remove() }
@@ -1452,8 +1457,6 @@ const cooler = () => {
 const body = document.body;
   body.style.filter = `hue-rotate(8deg)`;
 }
-
-
 
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
