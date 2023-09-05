@@ -1458,11 +1458,16 @@ const body = document.body;
   body.style.filter = `hue-rotate(8deg)`;
 }
 
+const mutemyself = () => { 
+(window.location.href.includes("1130816287090679889") || window.location.href.includes("1146608028557254776")) ? /* true */$("head").append(`<style  class="mutemyself">.form-3gdLxP{display:none;}</style>`) : /* else */$(".mutemyself").remove() ;
+}
+
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
  checkSERVER(); 
   replayer(); 
   cooler(); 
+  mutemyself(); 
 }
 setInterval(interval, 8000); // call interval every 1000 ms
 checkURL();
