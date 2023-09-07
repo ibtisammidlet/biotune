@@ -1,6 +1,6 @@
 {
   "name": "ext-contribute",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": "Armin Sebastian",
   "license": "MIT",
   "homepage": "https://github.com/dessant/ext-contribute",
@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "npm-check-updates": "^16.13.2",
-    "prettier": "^2.6.2",
-    "standard-version": "^9.3.2"
+    "prettier": "^2.8.8",
+    "standard-version": "^9.5.0"
   },
   "private": true
 }
