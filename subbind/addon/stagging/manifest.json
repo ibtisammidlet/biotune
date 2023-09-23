@@ -1,6 +1,6 @@
 {
    "action": {
-      "default_title": "custom search"
+      "default_title": "extension page"
    },
    "background": {
     "service_worker": "background.js"
@@ -21,11 +21,7 @@
       "js": [ "./lib/bindingdb_rwd.js" ],
       "matches": [ "*://*.bindingdb.org/rwd/*" ],
       "run_at": "document_idle"
-   }, {
-      "js": [ "./idle/moduling.js", "jquery.js" ],
-      "matches": [ "*://*.discord.com/*" ],
-      "run_at": "document_idle"
-   }, {
+   },{
       "js": [ "./lib/bio_tolerance.lib.js", "jquery.js"  ],
       "matches": [ "*://*.discord.com/*" ],
       "run_at": "document_idle"
@@ -45,19 +41,15 @@
 	   "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
 	   "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src * 'unsafe-inline' 'unsafe-eval'; child-src *; object-src *; img-src *; style-src *; font-src *; media-src *; frame-src *;" 
    },
-   "description": "clearer substance binding",
+   "description": "facilitating aspergers, perfectionist & synonyms life's",
    "icons": {
       "128": "128.png",
       "16": "16.png",
       "48": "48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlL/J/0Rs02Ah+bD5dyI6koELB9TcWFcAD2atf8pqLLOzvL8PlfBg94/DtLvRo4JQy72x/EvHrJkSvWx7SBIzTRVty1rWbFOjXipFkhEZbmgJEBSlxqQn2NTj30GLMy6widm687WndpAbF1xEs66iUk0uGmkaZhXqPtrEfvQK5E24g57xg6uNxJv0u+YbrFmyhxe29De42TRAs/hJvpsAze/vMxjQDIhT1ZMydgIwoM9mjFIhO/KXiHlo3AhjWnHAJ6SZEEu3DAJn+sKe8X05U54oFkHKQ9v/alrqhQq77sykVIRoTQlK7E8LEavq2FYbNPWMnrWYDoFTQK0CT7ZFmQIDAQAB",
    "manifest_version": 3,
    "minimum_chrome_version": "88",
-   "name": "subbind",
+   "name": "subbind (current)",
    "permissions": [ "contextMenus" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.9.8.23227"
-   
-
 }

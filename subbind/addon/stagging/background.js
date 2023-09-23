@@ -707,6 +707,18 @@ https://www.swansonvitamins.com/q?kw=boron [trst=me asking in biot==>𝖀𝖝�
 
 https://www.bertin-bioreagent.com/pr83187/lamotrigine [binding]
 https://www.geneticlifehacks.com/?s=care [blog]
+
+15 nearest neighbours based on brain RNA expression https://www.proteinatlas.org/ENSG00000135519-KCNH3/brain 
+https://www.pnas.org/action/doSearch?AllField=care [nonameusr/blank server]
+
+Here is my running list of TRUSTED sources for nootropics herbs and research chemicals:
+https://buydmaaonline.com/
+https://www.nutrivitashop.com/
+https://researchem.store/
+https://buckylabs.com/
+https://www.chemyo.com/
+[adam/nemo server] https://discord.com/channels/792481404553265164/1112754378349219900/1147006367731826808
+
 */
 
     if (tab) {

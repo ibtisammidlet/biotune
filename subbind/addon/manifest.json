@@ -41,11 +41,15 @@
       "js": [ "./idle/hideElementsWithoutKeywords.js", "./lib/github.lib.js" ],
       "matches": [ "https://github.com/search?q=*&type=repositories*" ],
       "run_at": "document_idle"
-   }, {
+   },{
       "js": [ "./lib/youtube-watched-videos-hider.user.js", "jquery.js" ],
       "matches": [ "https://*.youtube.com/*" ],
       "run_at": "document_idle"
-   }   
+   }, {
+      "js": [ "./lib/discord.me.lib.js", "jquery.js" ],
+      "matches": [ "https://*.discord.me/*" ],
+      "run_at": "document_idle"
+   }  
 ],
 
 

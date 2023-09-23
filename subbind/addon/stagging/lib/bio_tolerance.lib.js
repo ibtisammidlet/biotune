@@ -1462,6 +1462,34 @@ const mutemyself = () => {
 (window.location.href.includes("1130816287090679889") || window.location.href.includes("1146608028557254776")) ? /* true */$("head").append(`<style  class="mutemyself">.form-3gdLxP{display:none;}</style>`) : /* else */$(".mutemyself").remove() ;
 }
 
+//** server bumb
+const bumb = () => { 
+fetch("https://disboard.org/server/bump/1001420842179239936", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "https://disboard.org/dashboard/servers",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+}/** let interval = async () => { bumb(); } setInterval(interval, 60 x 60 x 2); // call interval every 2 hours **/
+
+
+
 let interval = async () => { /** global async function **/
 /*  shadowban(); */
  checkSERVER(); 
