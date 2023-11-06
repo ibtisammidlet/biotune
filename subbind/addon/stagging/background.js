@@ -719,6 +719,8 @@ https://buckylabs.com/
 https://www.chemyo.com/
 [adam/nemo server] https://discord.com/channels/792481404553265164/1112754378349219900/1147006367731826808
 
+https://rcd.bio/product-category/nootropics/ [https://rcd.bio/product-category/nootropics/ anyone heard of this company? , https://discord.com/channels/962009752035008593/962009752488013834/1169251671738699816]
+
 */
 
     if (tab) {

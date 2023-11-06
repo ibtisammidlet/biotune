@@ -1,3 +1,0 @@
-start with compiler.html as first plan, it will provide clientside based online webpage that's going to pack extention from github playground dir, but it didn't work
-then cxr packer 2.0.1 worked, but there was problems of i dont have the private key of chrome privatly distrubted addon
-switched to publish-browser-extension-1.4.1 which will use chrome store uploading api, but i get aversed from the project

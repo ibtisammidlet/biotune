@@ -263,13 +263,12 @@ var kd =  $(this).find("#kd").text();
 var EC50 =  $(this).find("#EC50").text();
 var actas =  $(this).find("#actas").text();
 eduarray.push({"Target": Target,  "species": species,  "Ki": Ki, "IC50": IC50, "kd": kd, "EC50": EC50, "actas": actas});
+
 })
 
 
 $(document).on('click','#PTS', function(){
-	
-	
-    console.log(eduarray);
+console.log(eduarray);
 $.ajax({
         url: "http://localhost:3000/subbind",
         type: 'GET',
@@ -280,6 +279,15 @@ $.ajax({
             alert(res);
         }
 });	
+
+
+/** starting copytocleapboard code
+$('#tableofscraption tr:visible').each(function(index, el) { //** used :visible because in time of coding i was using .hide() instead of .remove()
+
+}) 
+**/
+
+
 });
 
 
