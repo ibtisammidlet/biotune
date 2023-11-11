@@ -245,7 +245,7 @@ $( "body" ).append(' <script type="text/javascript"> var sc_project=12574329;  v
 
 
 
-$(".content_index form").append('<button id="PTS" type="button" >calc</button>');
+$(".content_index form[method='post']").append('<button id="PTS" type="button" >copy</button>');
 
 $(async function() {
     var eduarray = [
@@ -268,6 +268,7 @@ eduarray.push({"Target": Target,  "species": species,  "Ki": Ki, "IC50": IC50, "
 
 
 $(document).on('click','#PTS', function(){
+/**
 console.log(eduarray);
 $.ajax({
         url: "http://localhost:3000/subbind",
@@ -279,15 +280,40 @@ $.ajax({
             alert(res);
         }
 });	
-
-
-/** starting copytocleapboard code
-$('#tableofscraption tr:visible').each(function(index, el) { //** used :visible because in time of coding i was using .hide() instead of .remove()
-
-}) 
 **/
 
 
+/** copytocleapboard **/
+// Select the table rows and iterate over each visible row
+var textToCopy = "";
+$('#tableofscraption td:visible').each(function(index, el) {
+  // Append the text of each visible row to the variable
+  textToCopy +=  $(this).text() + "    ";
+});
+
+// add a new line character ("\n") after every 7th occurrence of four spaces ("    ") in the given string https://you.com/search?q=still+the+same%2C+take+your+time%2C+you+might+need+deffirent+function+because+knowing+the+problem+where+here+is+hard%2C+it+don%27t+add+the+new+line+always+and+when+it+does+it+does+in+8th&cid=c1_4dc26c6a-f73b-48e1-bc1a-122e7720b00d&tbm=youchat
+const modifiedString = "Target/Host    species    Ki nM    IC50 nM    kd nM    EC50 nM    act as    \n" + textToCopy.replace(/    /g, (match, offset, str) => {
+  const count = str.slice(0, offset).split("    ").length;
+  return count % 7 === 0 ? match + "\n" : match;
+});
+
+// Create a temporary textarea element and set its value to the text you want to copy
+var tempTextarea = $('<textarea>');
+tempTextarea.val(modifiedString);
+
+// Append the temporary textarea element to the document body
+$(document.body).append(tempTextarea);
+
+// Select the text within the temporary textarea
+tempTextarea.select();
+
+// Copy the selected text to the clipboard
+document.execCommand("copy");
+
+// Remove the temporary textarea from the document body
+tempTextarea.remove();
+// https://you.com/search?q=how+to+do+that+for+this+var+instead+of+logging+it+%3A+%2F%2F+starting+copytocleapboard+code%0A%24%28%27%23tableofscraption+tr%3Avisible%27%29.each%28function%28index%2C+el%29+%7B+%2F%2F**+used+%3Avisible+because+in+time+of+coding+i+was+using+.hide%28%29+instead+of+.remove%28%29%0Aconsole.log%28%24%28this%29.text%28%29%2B%22++++%22%29%3B%0A%7D%29+%0A&cid=c1_cda79427-bf50-4139-8bc2-9ca4b1612b48&tbm=youchat
+$(".content_index form[method='post'] #PTS:last-child").text("copied!");
 });
 
 
