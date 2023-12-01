@@ -721,6 +721,7 @@ https://www.chemyo.com/
 
 https://rcd.bio/product-category/nootropics/ [https://rcd.bio/product-category/nootropics/ anyone heard of this company? , https://discord.com/channels/962009752035008593/962009752488013834/1169251671738699816]
 
+unique med ressian site https://rxeli.com/ [has anyone heard of RxEli b4?/sirsad server https://discord.com/channels/962009752035008593/962009752488013834/1173873781249425458 , trust: not sure, one guy on reddit said it was fine lmao https://discord.com/channels/962009752035008593/962009752488013834/1173880127634022452]
 */
 
     if (tab) {
