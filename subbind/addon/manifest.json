@@ -61,7 +61,7 @@
 	   "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src * 'unsafe-inline' 'unsafe-eval'; child-src *; object-src *; img-src *; style-src *; font-src *; media-src *; frame-src *;" 
    },
    "description": "clearer substance binding",
-   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "optional_host_permissions": [ "http://*/*", "https://*/*" ],
    "icons": {
       "128": "128.png",
       "16": "16.png",

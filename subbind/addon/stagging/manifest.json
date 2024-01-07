@@ -51,5 +51,5 @@
    "minimum_chrome_version": "88",
    "name": "subbind (current)",
    "permissions": [ "contextMenus" ],
-   "version": "1.9.8.23227"
+   "version": "1.9.9.231228"
 }

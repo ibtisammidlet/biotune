@@ -8,9 +8,24 @@
 
 <body>
     <div class="outer-wrapper">
-
-        <!-- https://codepen.io/flynch55/pen/BEyVKK -->
-        <table class="table">
+	
+        <!-- developer table hide function-->
+    <button class="developer-button">I'm a developer</button>
+	<style>
+        .developer-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .developer-table {
+            display: none;
+        }
+    </style>
+	
+<!-- https://codepen.io/flynch55/pen/BEyVKK -->
+        <table class="table developer-table">
             <tbody>
                 <tr>
                     <td class="col-md-2">
@@ -51,9 +66,15 @@
 
 
         </div>
+		<div class="image-container">
+		<h4>manage addon site access:</h4>
+            <img src="./site_access.png">
+        </div>
+
     </div>
 
     <script src="options.js"></script>
+	
 </body>
 
 </html>

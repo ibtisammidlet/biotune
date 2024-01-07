@@ -450,6 +450,28 @@ chrome.contextMenus.create({
   "contexts" : ["selection"],
   "parentId": "v1.9.9+"
 });
+chrome.contextMenus.create({
+  "id":"v2.0.0+",
+  "title" : "v2.0.0+",
+  "contexts" : ["all"],
+  "parentId": "v1.9.9+"
+});
+
+
+chrome.contextMenus.create({
+  "id":"proteinatlas",
+  "title" : "find nearest neighbours based on Brain expression cluster (RNA) for %s",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"chemical-collective",
+  "title" : "search in chemical-collective for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["selection"],
+  "parentId": "v2.0.0+"
+});
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -650,14 +672,14 @@ https://m.facebook.com/buddylist.php [implemented]
 
 ###############################################################################################################################################################
 ##### EXCELED          #####        trusted by                                       free int shipping for over (usd)    int shipping price(usd)    accept btc#
-pharmshopworld.com                  http://levekunst.com/blogs/wp/ibogaine.php                                                                                #
-chemical-collective.com             https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543427                                                #
-https://neev-labs.com/              https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
-https://www.smokeyschemsite.com/    https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
+pharmshopworld.com(dead)            http://levekunst.com/blogs/wp/ibogaine.php                                                                                #
+chemical-collective.com[implemented]https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543427                                                #
+https://neev-labs.com/(dead)        https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
+www.smokeyschemsite.com([SEIZED]    https://www.bluelight.org/xf/conversations/hi.1471559/#convMessage-1543452                                                #
 nootropicsource.com                 nootropicsindex.com                              150                                                            yes       #
 nootropicsdepot.com                                                                                                                                           #
-www.nootroponaut.com                                                                 200                                                                      #
-www.biohackerslab.com                                                                                                    9,95                                 #
+www.nootroponaut.com(blog)                                                           200                                                                      #
+www.biohackerslab.com(blog)                                                                                              9,95                                 #
 www.brainzyme.com                                                                    52.12                               pre-backaged supplement              #
 #info: you migh not able to buy drugs in algeria due to it's stringent import regulations                                                                     #
 >>https://modafinil.org/buy-modafinil-bitcoin/                                                                                                                #
@@ -708,7 +730,7 @@ https://www.swansonvitamins.com/q?kw=boron [trst=me asking in biot==>𝖀𝖝�
 https://www.bertin-bioreagent.com/pr83187/lamotrigine [binding]
 https://www.geneticlifehacks.com/?s=care [blog]
 
-15 nearest neighbours based on brain RNA expression https://www.proteinatlas.org/ENSG00000135519-KCNH3/brain 
+15 nearest neighbours based on brain RNA expression https://www.proteinatlas.org/ENSG00000135519-KCNH3/brain  [implemented]
 https://www.pnas.org/action/doSearch?AllField=care [nonameusr/blank server]
 
 Here is my running list of TRUSTED sources for nootropics herbs and research chemicals:
@@ -722,6 +744,7 @@ https://www.chemyo.com/
 https://rcd.bio/product-category/nootropics/ [https://rcd.bio/product-category/nootropics/ anyone heard of this company? , https://discord.com/channels/962009752035008593/962009752488013834/1169251671738699816]
 
 unique med ressian site https://rxeli.com/ [has anyone heard of RxEli b4?/sirsad server https://discord.com/channels/962009752035008593/962009752488013834/1173873781249425458 , trust: not sure, one guy on reddit said it was fine lmao https://discord.com/channels/962009752035008593/962009752488013834/1173880127634022452]
+cute yet conseptializm biohacking blog https://micro-bites.org/ (blank server)
 */
 
     if (tab) {
@@ -920,6 +943,15 @@ unique med ressian site https://rxeli.com/ [has anyone heard of RxEli b4?/sirsad
         }
         if (info.menuItemId === "nootropicsbase"){
       chrome.tabs.create({url: 'https://nootropicsbase.com/?s='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+		
+		
+		
+        if (info.menuItemId === "proteinatlas"){
+      chrome.tabs.create({url: 'https://www.proteinatlas.org/search/'+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "chemical-collective"){
+      chrome.tabs.create({url: 'https://chemical-collective.com/?s='+info.selectionText+'&post_type=product&dgwt_wcas=1'+'&utm_medium=cpc&utm_source=subbind'});
         }
 
 

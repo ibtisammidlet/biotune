@@ -32,9 +32,17 @@ window.onload = function() {
   });
 };
 
+
+window.onload = function() {
+$('.developer-button').click(function() {
+$('.developer-table').css('display', 'flex');
+});
+};
+
 let interval = async () => { /** global async function **/
 	await doIt()  /** await the first function **/
     store(data)  /** calling second function n giving it the parama **/
 }
 setInterval(interval, 1000); // call interval every 1000 ms
+
 

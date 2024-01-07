@@ -1,5 +1,5 @@
 chrome.action.onClicked.addListener(function(tab) {
-      chrome.tabs.create({url: 'https://www.biotune.org/p/subbind.html'});
+  chrome.runtime.openOptionsPage();
     // Tab opened.
   });
 
