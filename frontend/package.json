@@ -1,0 +1,17 @@
+{
+  "name": "retrieve-data",
+  "version": "1.0",
+  "main": "index.js",
+  "description": "user data retrieve",
+  "author": "ibtisam midlet",
+  "license": "MIT",
+  "dependencies": {
+	"sqlite3": "5.1.6"
+  },
+  "scripts": {
+    "start": "concurrently \"node express_rest_receiver.js\" \"node oauth.js\""
+  },
+    "devDependencies": {
+    "concurrently": "8.2.2"
+  }
+}

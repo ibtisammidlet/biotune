@@ -1,5 +1,5 @@
 // Make sure to replace 'YOUR_API_KEY' and 'YOUR_PRODUCT_ID' with your actual Gumroad API key and product ID
-const apiKey = 'YHaOCMShjBHFjf48RC7sfH_aQ1EiVrgKJYfpWV94R6w';
+const apiKey = process.env.GUMROAD_API;
 const productId = 'TuHWore9OV-Xfh4IYVLq5w==';
 
 // Function to check if the visitor has purchased the item
@@ -599,7 +599,7 @@ checkPurchaseStatus();
             "order_id": 914554239,
             "is_product_physical": false,
             "purchaser_id": "2994373175901",
-            "is_recurring_billing": false,
+            "is_1.7recurring_billing": false,
             "can_contact": true,
             "is_following": false,
             "disputed": false,
@@ -632,3 +632,180 @@ checkPurchaseStatus();
     "next_page_url": "/v2/sales?page_key=20231001085926-914554239&product_id=TuHWore9OV-Xfh4IYVLq5w%3D%3D"
 }
 **/
+
+// Function to check if the visitor has purchased the item
+async function nextpages() {
+  try {
+    const response = await fetch(`https://api.gumroad.com/v2/sales?product_id=${productId}`, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`
+      }
+    });
+    const data = await response.json().then(data => {
+console.log(data.next_page_url)
+  // Check if there is a next page
+  if (data.next_page_url && data.next_page_key) {
+	  
+	  
+
+async function nextpages2() {
+  try {
+    const response = await fetch(`https://api.gumroad.com${data.next_page_url}`, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`
+      }
+    });
+    const response2 = await response.json().then(data => { console.log("this is data2"+JSON.stringify(data))
+    });
+  } catch (error) {
+    console.error('Error checking purchase status:', error);
+  }
+}
+nextpages2();
+
+	  
+	  
+	  
+	  
+	  
+  }
+   });
+  } catch (error) {
+    console.error('Error checking purchase status:', error);
+  }
+}
+
+// Call the function to check the purchase status
+nextpages();
+
+
+
+
+
+let data2 = [] /** empty array of links to push to it **/
+
+async function getimgdownloadlinks() { /** fatch page, then put links to Array then console-log it, then console errors **/
+  try {
+    const response = await fetch(`https://api.gumroad.com/v2/sales?product_id=${productId}`, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`
+      }
+    });
+    const data = await response.json().then(data => {
+console.log(data.next_page_url)
+data2.push({'videourl': 'https://api.gumroad.com' + data.next_page_url});
+
+	  
+	  
+
+
+
+
+
+
+
+
+
+  }
+   );
+  } catch (error) {
+    console.error('Error checking purchase status:', error);
+  }  
+}
+
+const downloadlinks = async (data2) => { /** waiting data defined done like this, outside that function **/
+console.log(JSON.stringify(data2))
+async function nextpages2() {
+
+
+
+  try {
+    const response = await fetch(`${data2[data2.length - 1].videourl}`, {
+      headers: {
+        Authorization: `Bearer ${apiKey}`
+      }
+    });
+    const response2 = await response.json().then(data => { console.log("this is data3"+JSON.stringify(data)) 
+  if (data.next_page_url && data.next_page_key) {
+
+	data2.push({'videourl': 'https://api.gumroad.com' + data.next_page_url});
+	console.log("imhere"+JSON.stringify(data2));
+downloadlinks(data2)
+
+} else {usingarray(data2)}
+    });
+  } catch (error) {
+    console.error('Error checking purchase status:', error);
+  }
+  
+
+}
+nextpages2();
+
+}
+
+const usingarray = async (data2) => {
+	console.log("aray"+JSON.stringify(data2)); /** for ai: i want to type a function here, that excuted after downloadlinks function has been excuted, but it seems because the first function getimgdownloadlinks declared some stuff on data2 array the (async () => { finction don't wait downloadlinks to complete before trigering usingarray **/
+  for (const item of data2) {
+    try {
+      const response = await fetch(item.videourl, {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        }
+      });
+      const result = await response.json();
+      console.log(result);
+	  
+      data2.push({'videourl2': result});
+
+	  
+    } catch (error) {
+      console.error("Error fetching or parsing JSON:", error);
+    }
+  } 	  console.log("aray"+JSON.stringify(data2)); 
+usingarray2(data2)
+}
+
+const usingarray2 = async (data2) => {
+	console.log("aray"+JSON.stringify(data2));
+	
+data2.forEach(item => {
+  if (item.videourl2 && item.videourl2.success && item.videourl2.sales) {
+    item.videourl2.sales.forEach(sale => {
+      if (sale.email) {
+        data2.push({'email': sale.email});
+      }
+    });
+  }
+});
+console.log("aray"+JSON.stringify(data2)); 
+usingarray3(data2)
+
+}
+
+const SQLite = require('sqlite3').verbose();
+const db = new SQLite.Database('bio.db');
+
+const usingarray3 = async (data2) => {
+	console.log("aray3"+JSON.stringify(data2)); 
+	  /** inject to sqlite **/
+db.run(`DELETE FROM gumroad WHERE email IS NOT NULL`);
+data2.forEach(obj => { 
+  if (obj.email) {
+    console.log(obj.email);
+	
+  db.run(`INSERT INTO gumroad (email) VALUES ('${obj.email}')`);
+
+  }
+});
+	db.close();
+
+
+}
+
+(async () => {
+	await getimgdownloadlinks()  /** await setting array of links **/
+	await downloadlinks(data2) /** downloading **/
+	
+	
+})()

@@ -472,6 +472,13 @@ chrome.contextMenus.create({
   "contexts" : ["selection"],
   "parentId": "v2.0.0+"
 });
+chrome.contextMenus.create({
+  "id":"cloudshell",
+  "title" : "go to cloudshell [tool]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -745,6 +752,10 @@ https://rcd.bio/product-category/nootropics/ [https://rcd.bio/product-category/n
 
 unique med ressian site https://rxeli.com/ [has anyone heard of RxEli b4?/sirsad server https://discord.com/channels/962009752035008593/962009752488013834/1173873781249425458 , trust: not sure, one guy on reddit said it was fine lmao https://discord.com/channels/962009752035008593/962009752488013834/1173880127634022452]
 cute yet conseptializm biohacking blog https://micro-bites.org/ (blank server)
+
+https://console.cloud.google.com/home/dashboard?cloudshell=true  [implemented]
+https://yana-log.net/
+
 */
 
     if (tab) {
@@ -953,7 +964,9 @@ cute yet conseptializm biohacking blog https://micro-bites.org/ (blank server)
         if (info.menuItemId === "chemical-collective"){
       chrome.tabs.create({url: 'https://chemical-collective.com/?s='+info.selectionText+'&post_type=product&dgwt_wcas=1'+'&utm_medium=cpc&utm_source=subbind'});
         }
-
+        if (info.menuItemId === "cloudshell"){
+      chrome.tabs.create({url: 'https://console.cloud.google.com/home/dashboard?cloudshell=true'+'&utm_medium=cpc&utm_source=subbind'});
+        }
 
 
     }
