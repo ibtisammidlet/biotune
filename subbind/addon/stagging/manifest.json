@@ -7,7 +7,7 @@
    },
    "content_scripts": [ {
       "js": ["jquery.js", "axios.min.js", "alpine.min.js"], 
-      "matches": [ "https://www.microworkers.com/jobs.php*", "https://web.telegram.org/k/*", "https://m.facebook.com/buddylist.php", "*://*.bindingdb.org/bind/*",  "*://*.biotune.org/2019/07/what-receptors-do-antidepressants-and.html*" , "*://*.bindingdb.org/rwd/*", "*://*.dezgo.com/*", "*://*.discord.com/*", "*://*.github.com/*" ],
+      "matches": [ "https://www.microworkers.com/jobs.php*", "https://web.telegram.org/k/*", "https://m.facebook.com/buddylist.php", "*://*.bindingdb.org/bind/*",  "*://*.biotune.org/2019/07/what-receptors-do-antidepressants-and.html*" , "*://*.bindingdb.org/rwd/*", "*://*.dezgo.com/*", "*://*.discord.com/*", "*://*.github.com/*",  "https://www.facebook.com/*"  ],
       "run_at": "document_idle"
    }, {
       "js": ["./lib/bindingdb.js"],
@@ -32,6 +32,10 @@
    }, {
       "js": [ "./lib/instagram-dl.user.js", "jquery.js"  ],
       "matches": [ "*://*.instagram.com/*" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/facebook_helper.lib.js", "jquery.js"  ],
+      "matches": [  "https://m.facebook.com/buddylist.php", "https://www.facebook.com/*" ],
       "run_at": "document_idle"
    }
 
