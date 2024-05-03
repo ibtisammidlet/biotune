@@ -1,4 +1,3 @@
-if (window.location.href == "https://m.facebook.com/buddylist.php") {
 	/*
 // ==UserScript==
 // @name         facebook active friends scraper
@@ -47,34 +46,4 @@ $(this).parent().parent().parent().parent().parent().find("#tableofids tbody").a
 $('#clickMe').remove();
 })
 };
-//alert("Hello his myFunction!");
-}
-////** fb page to profile reposter
-//alert(html);
-
-//if (window.location.href === "https://www.facebook.com") {
-//  myFunction();
-//}
-//
-//function myFunction() {
-//  // Code to be executed
-//  console.log("Hello from myFunction!");
-//}
-if (window.location.href == "https://www.facebook.com/") {
-//  alert("Hello from myFunction!");
-//  $( "head" ).append('<div id="hidden">ffgg</div><style>#hidden{display:none}</style>');
-$( "head" ).append('<div id="hidden"></div><style>#hidden{display:none}</style>');
-//alert($("#hidden").html())
-
-// var html = $("#hidden").load("https://www.facebook.com/profile.php?id=61557576906545");
-//var html = $("#hidden").load("https://www.facebook.com/profile.php?id=61557576906545 [dir='auto']");
-var html = $("#hidden").load("https://www.facebook.com/profile.php?id=61557576906545 .html-div [dir='auto'] div div div");
-
-//$( "head" ).append('<style>.x1hc1fzr {display: none;}</style>');
-//hidding
-
-$('h3:contains("News Feed posts")').parent().css("display", "none");
-
-setTimeout(() => $('span:contains("s on your mind")').trigger('click'), 20000);
-}
 

@@ -33,10 +33,6 @@
       "js": [ "./lib/instagram-dl.user.js", "jquery.js"  ],
       "matches": [ "*://*.instagram.com/*" ],
       "run_at": "document_idle"
-   }, {
-      "js": [ "./lib/facebook_helper.lib.js", "jquery.js"  ],
-      "matches": [  "https://m.facebook.com/buddylist.php", "https://www.facebook.com/*" ],
-      "run_at": "document_idle"
    }
 
 
@@ -55,5 +51,5 @@
    "minimum_chrome_version": "88",
    "name": "subbind (current)",
    "permissions": [ "contextMenus" ],
-   "version": "1.9.9.231228"
+   "version": "1.9.9.24418"
 }

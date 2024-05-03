@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+      &lt;head&gt;
+  
+  <![CDATA[>
+<!-- Default Statcounter code for access biotune
+https://access.biotune.org/ -->
+<script type="text/javascript">
+var sc_project=12995603; 
+var sc_invisible=1; 
+var sc_security="2629eb83"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async="async" ></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12995603/0/2629eb83/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<//]]>
+  
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+        <b:if cond='data:blog.isMobile'>
+        <b:else/>
+          <meta content='width=1100' name='viewport'/>
+        </b:if>
+        <b:include data='blog' name='all-head-content'/>
+    <title>
+		<b:if cond='data:blog.pageType == &quot;index&quot;'>
+			<data:blog.pageTitle/>
+		<b:else/>
+			<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+				<data:blog.pageName/> - <data:blog.title/>
+			<b:else/>
+				404 - <data:blog.title/> 
+			</b:if>
+		</b:if>
+    </title>
+<!-- meta tags -->
+    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <meta expr:content='data:blog.pageName' property='og:title'/>
+        <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+        <meta content='article' property='og:type'/>
+    </b:if>
+    <b:if cond='data:blog.postImageUrl'>
+        <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+    <b:else/>
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+        <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+    </b:if></b:if>
+    <b:if cond='data:blog.metaDescription != &quot;&quot;'>
+        <meta expr:content='data:blog.metaDescription' name='og:description'/>
+    </b:if>
+    <meta expr:content='data:blog.title' property='og:site_name'/>
+    <meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    <b:if cond='data:blog.postImageUrl'>
+      <meta content='summary_large_image' name='twitter:card'/>
+      <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+    <b:else/>
+      <meta content='summary' name='twitter:card'/>
+      <b:if cond='data:blog.postImageThumbnailUrl'>
+        <meta expr:content='data:blog.postImageThumbnailUrl' name='twitter:image'/> 
+      </b:if>
+    </b:if>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+    <b:if cond='data:blog.metaDescription'>
+      <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+    </b:if>
+
+    <!-- Social Media meta tag need customer customization -->
+    <meta content='Facebook App ID here' property='fb:app_id'/> 
+    <meta content='Facebook Admin ID here' property='fb:admins'/> 
+    <meta content='@username' name='twitter:site'/>
+    <meta content='@username' name='twitter:creator'/>
+
+<!-- end meta tags -->
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+<link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css' integrity='sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==' referrerpolicy='no-referrer' rel='stylesheet'/>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet'/>
+<link href='http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:bold' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:bold' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'/>
+	<b:skin><![CDATA[/*
+
+
+
+-----------------------------------------------
+Blank Blogger Template by Mr Abu Ali
+Name:        Mr Abu Ali
+Designer:        Mr Abu Ali
+URL:        http://www.mrabu3li.com
+----------------------------------------------- */
+
+/* Variables Definitions
+------------------------------ */
+/*
+
+<Variable name="body.background" description="Body Background" type="background"
+color="#f7f7f7" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
+
+<Variable name="test" description="test" type="color" default="#000" value="#000000"/>
+
+*/
+/* bulma tweaks */
+html {
+    background-color: unset !important;
+}
+
+/* Css Reset
+------------------------------ */
+body {background:$(body.background);color:#333;font:15px 'Open Sans';}
+ul {margin:0;padding:0;}
+li {display: list-item;text-align: -webkit-match-parent;}
+* {list-style:none;text-decoration:none;margin:0;padding:0;outline:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*, :before, :after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+a {color:$(a.color);font-family:'Open sans';}
+.clear {clear:both;}
+.widget {margin: 0;}
+.widget-item-control ,.blog-feeds ,.status-msg-body, .date-header, .post-feeds, .status-msg-border {display:none;}
+.widget .widget-item-control a img {display:none;}
+.widget li, .BlogArchive #ArchiveList ul.flat li {padding: 0;}
+.post-footer-line>* {margin-left: 0;}
+.content-outer, .header-outer, .tabs-outer, .main-outer, .main-inner, .footer-outer, .post, .comments, .widget, .date-header, .inline-ad {position: relative;min-height: 0;_position: static;_height: 1%;}
+.content-outer, .header-outer, .tabs-outer, .main-outer, .main-inner, .footer-outer, .post, .comments, .widget, .date-header, .inline-ad {position: relative;min-height: 0;_position: static;_height: 1%;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;color: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+
+/* Tarnsition
+------------------------------ */
+ {transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;-moz-transition: all .3s;}
+
+
+    ]]></b:skin>
+	<b:template-skin>
+<![CDATA[
+
+/* Layout
+------------------------------ */
+
+    ]]>
+</b:template-skin>
+
+<script src='//code.jquery.com/jquery-1.10.2.min.js' type='text/javascript'/>
+
+      &lt;/head&gt;&lt;!--<head/>--&gt;
+
+	<body expr:class='data:blog.pageType'>
+
+
+<div class='container'>
+<div class='header-top'>
+  <b:section id='menu-top'/>
+  <b:section id='social-media'/>
+</div>
+</div>
+
+
+      
+      
+      
+      
+      
+      
+  
+      
+<h1>click here to get access token for biotune.org/</h1>
+<button class='btn' id='btn-instafeed-load' onclick='inject()'>get</button>
+
+      
+<script>
+function inject(){
+event.preventDefault();
+document.cookie = &quot;biotune=&quot;+ JSON.stringify({v: &#39;1&#39;, value: &#39;27548741478549&#39;})+&quot;; Path=/; domain=biotune.org; Expires=Wed Dec 31 2098 16:00:00 GMT-0800 (Pacific Standard Time)&quot;;
+  
+if (document.cookie.indexOf(&quot;biotune={v: &#39;1&#39;, value: &#39;27548741478549&#39;}&quot;)) {
+alert(&quot;done!&quot;)
+  window.location.href=&quot;https://www.biotune.org/2019/07/what-receptors-do-antidepressants-and.html&quot;;
+} else {
+console.log(&quot;retry&quot;)
+}
+  
+}
+</script> 
+<style>
+@import url(&#39;https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&#39;);
+body {
+  font-family: &#39;Lato&#39;, &quot;Helvetica&quot;, Arial, sans-serif;
+}
+
+/* remove bootstrap gutter*/
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*=&#39;col-&#39;]:not(:first-child),
+.row.no-gutter [class*=&#39;col-&#39;]:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+/* the good stuff */
+body {
+}
+
+.img-featured-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-featured-container img {
+  width: 100%;
+/*   padding: 10px; */
+}
+
+.img-featured-container .img-backdrop {
+  background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.img-featured-container:hover &gt; .img-backdrop {
+  opacity: 1;
+}
+
+/* center text horizontally and vertically on image hover */
+.img-featured-container .description-container {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  z-index: 2;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.img-featured-container .description-container .fa-instagram {
+  font-size: 40px;
+}
+
+.img-featured-container .description-container p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-featured-container:hover .description-container {
+  opacity: 1;
+}
+
+.img-featured-container .description-container .caption {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.img-featured-container .description-container .likes,
+.img-featured-container .description-container .comments {
+  margin: 0 5px;
+}
+
+/* load more button */
+#btn-instafeed-load {
+  color: #fff;
+  background: #26a3ff;
+  font-size: 16px;
+  margin: 20px auto;
+  padding: 8px 40px;
+  display: block;
+  border: none;
+}
+
+/* media queries  */
+@media screen and (min-width:768px) {
+  .img-featured-container .description-container .caption {
+    display: block;
+  }
+}  
+
+h3, h1 {
+      margin-bottom: 15px;
+    color: #2c3e50;
+    position: relative;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+  button {
+    border-radius: 17px;
+}
+</style> 
+      
+      
+      
+<button class='btn' id='btn-instafeed-load' onclick='v2()'>get v2</button>
+
+<form action='https://server.biotune.org/injecteddata' class='uk-search-header' method='get' style='display: flex; align-items: center; padding: 0px 35%; display:none;'>
+<input class='uk-searchbox-header' id='s' name='q' placeholder='email...' style='font-size: 16px;margin: 20px auto;padding: 8px 40px;display: block;border: none;border-radius: 4px;color: #2c3e50;font-weight: bold;' type='text'/>
+<button class='btn' id='btn-instafeed-load'>ok</button>
+</form>
+  
+<script>// <![CDATA[
+function v2(){
+event.preventDefault();
+      
+alert("purchase in the open tab and then type your email");
+window.open("https://ibtisammidlet.gumroad.com/l/RCD", "_blank");
+$(".uk-search-header").show()
+      
+      
+      
+}
+
+// JavaScript to send a GET request in the background
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the form element
+  var form = document.querySelector('.uk-search-header');
+
+  // Add an event listener for form submission
+  form.addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Get the form data
+    var formData = new FormData(form);
+
+    // Send a GET request in the background using fetch API
+    fetch('https://server.biotune.org/injecteddata?' + new URLSearchParams(formData))
+      .then(response => response.text())
+ .then(data => {
+
+if (data.indexOf("undefined") !== -1) {
+alert("seems like you still did not purchase from gumroad page, if problem continue ask ibti https://www.instagram.com/elena.final_fail/")
+} 
+
+if (data.indexOf("@") !== -1) {
+       // Handle the response as needed
+document.cookie = 'gumroad={"v":"2","value":"'+data.substring(17)+'"}'+'; Path=/; domain=biotune.org; Expires=Wed Dec 31 2098 16:00:00 GMT-0800 (Pacific Standard Time)';
+alert("thanks for purchase if you have problem using the service contact ibtisam https://www.instagram.com/elena.final_fail/")
+
+
+}
+      })
+
+      .catch(error => {
+        // Handle any errors
+      });
+  });
+});
+$("#btn-instafeed-load").css("display", "none")
+
+// ]]></script> 
+      
+
+
+      
+      
+      
+      
+      
+      
+      
+	</body>
+
+    </html>
