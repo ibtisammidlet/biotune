@@ -6,4 +6,11 @@
 setTimeout(function() {
   $(".bump-btn").click();
   $("#bump-server-submit").click();
+  
+  
+// noot 3.0 hide typebox
+if (window.location.href === "https://discord.com/channels/836795769210011698/849005969605787679") {
+    $("div:contains('channelBottomBarArea')").hide();
+}
+
 }, 1 * 3 * 1000); // 60 minutes * 60 seconds * 1000 milliseconds = 1 hour
