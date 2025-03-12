@@ -49,6 +49,10 @@
       "js": [ "./lib/discord.me.lib.js", "jquery.js" ],
       "matches": [ "https://*.discord.me/*" ],
       "run_at": "document_idle"
+   }  , {
+      "js": [ "./lib/discord.com.lib.js", "jquery.js" ],
+      "matches": [ "https://*.discord.com/*" ],
+      "run_at": "document_idle"
    }  
 ],
 
