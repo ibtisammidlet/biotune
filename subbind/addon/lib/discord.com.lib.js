@@ -5,7 +5,7 @@
 // Wait for an hour before running the code again
 setTimeout(function() {
 // noot 3.0 hide typebox
-if (window.location.href === "https://discord.com/channels/836795769210011698/849005969605787679") {
+if (window.location.href.indexOf("https://discord.com/channels/962009752035008593") !== -1) {
     $("div:contains('channelBottomBarArea')").hide();
 }
 
