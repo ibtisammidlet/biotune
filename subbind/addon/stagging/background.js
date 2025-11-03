@@ -757,6 +757,8 @@ https://console.cloud.google.com/home/dashboard?cloudshell=true  [implemented]
 https://yana-log.net/
 https://www.bestchange.com/
 https://umbrellalabs.is/ [US only]
+
+https://parapharmacyonline.com/categorie-de-produit/complements-alimentaires/
 */
 
     if (tab) {

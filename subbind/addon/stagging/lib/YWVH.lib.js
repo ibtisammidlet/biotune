@@ -485,7 +485,7 @@ userpg();
 results();
 subscriptions();
 watch();
-general();
+/* general(); */
 
 
 };

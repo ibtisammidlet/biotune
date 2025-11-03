@@ -851,6 +851,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 
 chrome.runtime.onStartup.addListener(() => {
-chrome.tabs.create({url: 'https://discords.com/servers/1001420842179239936/upvote'});
+chrome.tabs.create({url: 'https://disboard.org/dashboard/servers'}); //** https://discords.com/servers/1001420842179239936/upvote
 chrome.tabs.create({url: 'https://app.gumroad.com/dashboard'});
 });

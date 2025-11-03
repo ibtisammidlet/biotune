@@ -1441,7 +1441,7 @@ const mute = () => {
 
 //** replay videos
 const replayer = () => {
-	            $('[aria-label="Play again"]').click();
+/*	            $('[aria-label="Play again"]').click(); */
 /* v2
         if ($('[aria-label="Play"]').offsetParent !== null && $('[aria-label="Pause"]') === null) {
             $('[aria-label="Play"]').click();

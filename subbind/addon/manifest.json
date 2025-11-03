@@ -53,6 +53,10 @@
       "js": [ "./lib/discord.com.lib.js", "jquery.js" ],
       "matches": [ "https://*.discord.com/*" ],
       "run_at": "document_idle"
+   }, {
+      "js": [ "./lib/tiktok.lib.js", "jquery.js" ],
+      "matches": [ "https://*.tiktok.com/*" ],
+      "run_at": "document_idle"
    }  
 ],
 
