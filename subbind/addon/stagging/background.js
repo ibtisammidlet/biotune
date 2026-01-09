@@ -479,6 +479,146 @@ chrome.contextMenus.create({
   "contexts" : ["all"],
   "parentId": "v2.0.0+"
 });
+chrome.contextMenus.create({
+  "id":"purerawz",
+  "title" : "search in purerawz for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"chemyo",
+  "title" : "search in chemyo for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"buypharma",
+  "title" : "search in buy-pharma for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"cheapmedicineshop",
+  "title" : "search in cheapmedicineshop for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"premiumrxdrugs",
+  "title" : "search in premiumrxdrugs for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"reliablerxpharmacy",
+  "title" : "search in reliablerxpharmacy for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+chrome.contextMenus.create({
+  "id":"v2.0.1+",
+  "title" : "v2.0.1+",
+  "contexts" : ["all"],
+  "parentId": "v2.0.0+"
+});
+
+chrome.contextMenus.create({
+  "id":"pharmacymall",
+  "title" : "search in pharmacymall for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"genericdoctor",
+  "title" : "search in genericdoctor for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"inhousepharmacy",
+  "title" : "search in inhousepharmacy for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"dideu",
+  "title" : "search in dideu for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"euronootropics",
+  "title" : "search in euronootropics for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"intellimeds",
+  "title" : "search in intellimeds for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"kimerachems",
+  "title" : "search in kimerachems for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"goldpharma",
+  "title" : "search in goldpharma for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+chrome.contextMenus.create({
+  "id":"v2.0.2+",
+  "title" : "v2.0.2+",
+  "contexts" : ["all"],
+  "parentId": "v2.0.1+"
+});
+
+chrome.contextMenus.create({
+  "id":"rechem",
+  "title" : "search in rechem for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.2+"
+});
+chrome.contextMenus.create({
+  "id":"unitedpharmaciesuk",
+  "title" : "search in unitedpharmaciesuk for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.2+"
+});
+chrome.contextMenus.create({
+  "id":"europechemist",
+  "title" : "search in europechemist for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.2+"
+});
+chrome.contextMenus.create({
+  "id":"pillbuys",
+  "title" : "search in pillbuys for %s [ven]",
+  "type" : "normal",
+  "contexts" : ["all"],
+  "parentId": "v2.0.2+"
+});
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
 /**
@@ -571,7 +711,6 @@ Atenolol: IC50 = 181 nM
 Metoprolol: IC50 = 1.7 μM
 Timolol: IC50 = 28 μM
 ")
-
 
 
 
@@ -759,6 +898,21 @@ https://www.bestchange.com/
 https://umbrellalabs.is/ [US only]
 
 https://parapharmacyonline.com/categorie-de-produit/complements-alimentaires/
+
+https://purerawz.co/?s=Ibutamoren&post_type=product&dgwt_wcas=1 [implemented]
+https://www.chemyo.com/?s=MK-677&post_type=product [implemented]
+
+https://www.dideu.com/ [trst=zim autism==>id=684191904706854963==>inf=No US shipping==>jcdentonserver=https://discord.com/channels/1022359715818242068/1179192619864174603/1458210879517626491]
+https://euro-nootropics.com/
+https://www.intellimeds.net/
+https://kimerachems.co
+https://goldpharma.com
+
+https://www.rechem.ca
+https://www.unitedpharmacies-uk.md/
+https://receptorchem.co.uk
+https://pillbuys.com [trst=jcdenton server===>https://discord.com/channels/1022359715818242068/1179192619864174603/1458252164978839553]
+
 */
 
     if (tab) {
@@ -970,8 +1124,67 @@ https://parapharmacyonline.com/categorie-de-produit/complements-alimentaires/
         if (info.menuItemId === "cloudshell"){
       chrome.tabs.create({url: 'https://console.cloud.google.com/home/dashboard?cloudshell=true'+'&utm_medium=cpc&utm_source=subbind'});
         }
-
-
-    }
+        if (info.menuItemId === "purerawz"){
+      chrome.tabs.create({url: 'https://purerawz.co/?s='+info.selectionText+'&post_type=product&dgwt_wcas=1'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "chemyo"){
+      chrome.tabs.create({url: 'https://www.chemyo.com/?s='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "buypharma"){
+      chrome.tabs.create({url: 'https://www.buy-pharma.md/Products/search?keyword='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "cheapmedicineshop"){
+      chrome.tabs.create({url: 'https://www.cheapmedicineshop.com/catalogsearch/result/?q='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "premiumrxdrugs"){
+      chrome.tabs.create({url: 'https://www.premiumrxdrugs.com/catalogsearch/result/?q='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "reliablerxpharmacy"){
+      chrome.tabs.create({url: 'https://www.reliablerxpharmacy.com/catalogsearch/result/?q='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+		
+		
+		
+        if (info.menuItemId === "pharmacymall"){
+      chrome.tabs.create({url: 'https://pharmacymall.net/search?q='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "genericdoctor"){
+      chrome.tabs.create({url: 'https://www.genericdoctor.com/search/'+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "inhousepharmacy"){
+      chrome.tabs.create({url: 'https://www.inhousepharmacy.vu/search.aspx?searchterm='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "dideu"){
+      chrome.tabs.create({url: 'https://www.dideu.com/en/sr.jsp?skeyword='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "euronootropics"){
+      chrome.tabs.create({url: 'https://euro-nootropics.com/?s='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "intellimeds"){
+      chrome.tabs.create({url: 'https://www.intellimeds.net/index.php?route=product/search&search='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "kimerachems"){
+      chrome.tabs.create({url: 'https://kimerachems.co/?s='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "goldpharma"){
+      chrome.tabs.create({url: 'https://goldpharma.com/search/'+info.selectionText+'/'+'?'+'utm_medium=cpc&utm_source=subbind'});
+        }
+		
+		
+		
+        if (info.menuItemId === "rechem"){
+      chrome.tabs.create({url: 'https://www.rechem.ca/index.php?route=product/search&search='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "unitedpharmaciesuk"){
+      chrome.tabs.create({url: 'https://www.unitedpharmacies-uk.md/search.html?search_text='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "europechemist"){
+      chrome.tabs.create({url: 'https://europechemist.com/?s='+info.selectionText+'&post_type=product'+'&utm_medium=cpc&utm_source=subbind'});
+        }
+        if (info.menuItemId === "pillbuys"){
+      chrome.tabs.create({url: 'https://pillbuys.com/search?controller=search&search_query='+info.selectionText+'&utm_medium=cpc&utm_source=subbind'});
+        }
+ 		
+   }
 
 });
