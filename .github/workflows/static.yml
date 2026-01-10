@@ -1,27 +1,20 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -35,6 +28,15 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Try './frontend' if your files are in a frontend folder
+          # Or use '.' if your store.html is in the main folder
+          path: './frontend' 
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Updated path to match your repo structure
