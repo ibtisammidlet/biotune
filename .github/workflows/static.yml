@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Updated path to match your repo structure
-          path: './biotune/frontend'
+          path: './frontend'
 
       - name: Deploy to GitHub Pages
         id: deployment
