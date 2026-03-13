@@ -11,8 +11,81 @@
 <link rel="canonical" href="https://receptordb.com/acetylcholine-muscarinic-m2.html" />
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
+<style>
+  body.paywalled > *:not(#paywall-overlay) {
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+  }
+  #paywall-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(10, 0, 30, 0.96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow-y: auto;
+  }
+  #paywall-box {
+    background: #1a0040;
+    border: 1px solid #7b2fff;
+    border-radius: 4px;
+    padding: 40px 48px;
+    text-align: center;
+    max-width: 480px;
+    width: 95%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto;
+  }
+  #paywall-box h2 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #f0e6ff;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+  }
+  #paywall-box p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #c9a8f5;
+    line-height: 1.7;
+    margin: 0 0 28px 0;
+    letter-spacing: 0.5px;
+  }
+  #paywall-box .gumroad-product-embed {
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 420px;
+  }
+  #paywall-notice {
+    margin-top: 16px;
+    font-size: 10px;
+    color: #7b5fa0;
+    letter-spacing: 1px;
+  }
+</style>
 </head>
 <body>
+<div id="paywall-overlay">
+  <div id="paywall-box">
+    <h2>Access</h2>
+    <p>
+      This record is part of a licensed database.<br>
+      A one-time payment grants lifetime access<br>
+      to all current and future records.
+    </p>
+    <script src="https://gumroad.com/js/gumroad-embed.js"></script>
+    <div class="gumroad-product-embed">
+      <a href="https://ibtisammidlet.gumroad.com/l/access">Loading...</a>
+    </div>
+    <div id="paywall-notice">One-time payment &nbsp;·&nbsp; No subscription</div>
+  </div>
+</div>
 <header class="site-header">
   <a href="/index.html" class="logo">receptor<span>db</span></a>
   <div class="header-search">
@@ -66,6 +139,39 @@ function toggleNav(id){var el=document.getElementById('nav-'+id);if(el)el.style.
 document.querySelectorAll('.sidebar-receptors a.active').forEach(function(a){a.closest('.sidebar-receptors').style.display='block';});
 var hdr=document.getElementById('hdr-search');
 if(hdr)hdr.addEventListener('keydown',function(e){if(e.key==='Enter'&&this.value.trim())window.location='/index.html?q='+encodeURIComponent(this.value.trim());});
+</script>
+<script>
+  (function () {
+    document.body.classList.add('paywalled');
+    if (sessionStorage.getItem('access_granted') === '1') {
+      grantAccess();
+      return;
+    }
+    window.addEventListener('message', function (e) {
+      if (e.origin.indexOf('gumroad.com') !== -1) {
+        try {
+          var data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+          if (data && (data.success === true || data.type === 'sale')) {
+            sessionStorage.setItem('access_granted', '1');
+            grantAccess();
+          }
+        } catch (err) {}
+      }
+    });
+    function grantAccess() {
+      var overlay = document.getElementById('paywall-overlay');
+      if (overlay) {
+        overlay.style.transition = 'opacity 0.4s ease';
+        overlay.style.opacity = '0';
+        setTimeout(function () {
+          overlay.remove();
+          document.body.classList.remove('paywalled');
+        }, 400);
+      } else {
+        document.body.classList.remove('paywalled');
+      }
+    }
+  })();
 </script>
 </body>
 </html>
